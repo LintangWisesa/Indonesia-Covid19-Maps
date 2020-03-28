@@ -1,0 +1,206 @@
+[
+    {
+        "Provinsi": "Aceh",
+        "latitude": 4.695135,
+        "longitude": 96.7493993,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Coat_of_arms_of_Aceh.svg/1200px-Coat_of_arms_of_Aceh.svg.png"
+    },
+    {
+        "Provinsi": "Bali",
+        "latitude": -8.4095178,
+        "longitude": 115.188916,
+        "logo": "https://4.bp.blogspot.com/-ELlrLdH0frM/WSz4AjqIWaI/AAAAAAAAASY/EF5ayA5zXn05TXw53cRUVTJeh6lzUJDDwCLcB/s400/Lambang%2BDaerah%2BProvinsi%2BBali%2B2.png"
+    },
+    {
+        "Provinsi": "Bangka Belitung",
+        "latitude": -2.7410513,
+        "longitude": 106.4405872,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Coat_of_arms_of_Bangka_Belitung_Islands.svg/1200px-Coat_of_arms_of_Bangka_Belitung_Islands.svg.png"
+    },
+    {
+        "Provinsi": "Banten",
+        "latitude": -6.4058172,
+        "longitude": 106.0640179,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/82/Coat_of_arms_of_Banten.png"
+    },
+    {
+        "Provinsi": "Bengkulu",
+        "latitude": -3.5778471,
+        "longitude": 102.3463875,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Coat_of_arms_of_Bengkulu.png"
+    },
+    {
+        "Provinsi": "Central Java",
+        "latitude": -7.150975,
+        "longitude": 110.1402594,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Jawa_Tengah_Logo.svg/526px-Jawa_Tengah_Logo.svg.png"
+    },
+    {
+        "Provinsi": "Central Kalimantan",
+        "latitude": -1.6814878,
+        "longitude": 113.3823545,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Coat_of_arms_of_Central_Kalimantan.png"
+    },
+    {
+        "Provinsi": "Central Sulawesi",
+        "latitude": -1.4300254,
+        "longitude": 121.4456179,
+        "logo": "http://1.bp.blogspot.com/-Mb3OPbim3Gw/VrYYo_59GjI/AAAAAAAAVFw/oh24hNmZ1NU/s1600/LOGO%2BSULAWESI%2BTENGAH.png"
+    },
+    {
+        "Provinsi": "East Java",
+        "latitude": -7.5360639,
+        "longitude": 112.2384017,
+        "logo": "https://2.bp.blogspot.com/-S1hrqQnm0nc/XDCpZ6C7iSI/AAAAAAAABvI/MlNdKdkNBHQa0lU-1I0gyTT5FbFSR2K0QCLcBGAs/s400/logo%2Bprovinsi%2Bjawa%2Btimur.png"
+    },
+    {
+        "Provinsi": "East Kalimantan",
+        "latitude": 1.6406296,
+        "longitude": 116.419389,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Coat_of_arms_of_East_Kalimantan.svg/1200px-Coat_of_arms_of_East_Kalimantan.svg.png"
+    },
+    {
+        "Provinsi": "East Nusa Tenggara",
+        "latitude": -8.6573819,
+        "longitude": 121.0793705,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Coat_of_arms_of_East_Nusa_Tenggara.svg/1200px-Coat_of_arms_of_East_Nusa_Tenggara.svg.png"
+    },
+    {
+        "Provinsi": "Gorontalo",
+        "latitude": 0.6999372,
+        "longitude": 122.4467238,
+        "logo": "https://3.bp.blogspot.com/-75ec3fJKhgU/UNl0Tdg9UXI/AAAAAAAAIrg/YztGIINVa2w/s1600/LOGO+PROVINSI+GORONTALO.png"
+    },
+    {
+        "Provinsi": "Jakarta",
+        "latitude": -6.211544,
+        "longitude": 106.845172,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Jakarta.svg/1200px-Coat_of_arms_of_Jakarta.svg.png"
+    },
+    {
+        "Provinsi": "Jambi",
+        "latitude": -1.4851831,
+        "longitude": 102.4380581,
+        "logo": "https://2.bp.blogspot.com/-y0bGVkW2XfY/Tdui2omcCgI/AAAAAAAADro/Ufjlj4w8nhs/s1600/logo+Jambi.png"
+    },
+    {
+        "Provinsi": "Lampung",
+        "latitude": -4.5585849,
+        "longitude": 105.4068079,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Lampung_coa.png"
+    },
+    {
+        "Provinsi": "Maluku",
+        "latitude": -3.2384616,
+        "longitude": 130.1452734,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Lambang_Provinsi_Maluku.png"
+    },
+    {
+        "Provinsi": "North Maluku",
+        "latitude": 1.5709993,
+        "longitude": 127.8087693,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Coat_of_arms_of_North_Maluku.png/1200px-Coat_of_arms_of_North_Maluku.png"
+    },
+    {
+        "Provinsi": "North Kalimantan",
+        "latitude": 1.5802128,
+        "longitude": 114.0308546,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/3/33/Emblem_of_North_Kalimantan.png"
+    },
+    {
+        "Provinsi": "North Sulawesi",
+        "latitude": 0.6246932,
+        "longitude": 123.9750018,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Coat_of_arms_of_North_Sulawesi.svg/1200px-Coat_of_arms_of_North_Sulawesi.svg.png"
+    },
+    {
+        "Provinsi": "North Sumatera",
+        "latitude": 2.1153547,
+        "longitude": 99.5450974,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Coat_of_arms_of_North_Sumatra.svg/1200px-Coat_of_arms_of_North_Sumatra.svg.png"
+    },
+    {
+        "Provinsi": "Papua",
+        "latitude": -4.269928,
+        "longitude": 138.0803529,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/d/de/Coat_of_Arms_of_Papua.png"
+    },
+    {
+        "Provinsi": "Riau",
+        "latitude": 0.2933469,
+        "longitude": 101.7068294,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Coat_of_arms_of_Riau.svg/1200px-Coat_of_arms_of_Riau.svg.png"
+    },
+    {
+        "Provinsi": "Riau Islands",
+        "latitude": 3.9456514,
+        "longitude": 108.1428669,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Coat_of_arms_of_Riau_Islands.png"
+    },
+    {
+        "Provinsi": "South Kalimantan",
+        "latitude": -3.0926415,
+        "longitude": 115.2837585,
+        "logo": "https://pngimage.net/wp-content/uploads/2018/06/logo-provinsi-kalimantan-selatan-png.png"
+    },
+    {
+        "Provinsi": "South Sulawesi",
+        "latitude": -3.6687994,
+        "longitude": 119.9740534,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Coat_of_arms_of_South_Sulawesi.svg/1200px-Coat_of_arms_of_South_Sulawesi.svg.png"
+    },
+    {
+        "Provinsi": "Southeast Sulawesi",
+        "latitude": -4.14491,
+        "longitude": 122.174605,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Coat_of_arms_of_Southeast_Sulawesi.svg/1200px-Coat_of_arms_of_Southeast_Sulawesi.svg.png"
+    },
+    {
+        "Provinsi": "South Sumatera",
+        "latitude": -3.3194374,
+        "longitude": 103.914399,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Coat_of_arms_of_South_Sumatra.svg/1200px-Coat_of_arms_of_South_Sumatra.svg.png"
+    },
+    {
+        "Provinsi": "West Java",
+        "latitude": -7.090911,
+        "longitude": 107.668887,
+        "logo": "https://3.bp.blogspot.com/-BRV8kAVyi4I/XDX3S86Pk5I/AAAAAAAABwA/K5fnfc4c1VYps0EcV32qP6yB96kghqU3QCLcBGAs/s1600/logo%2Bjawa%2Bbarat.png"
+    },
+    {
+        "Provinsi": "West Kalimantan",
+        "latitude": -0.2787808,
+        "longitude": 111.4752851,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Coat_of_arms_of_West_Kalimantan.svg/1200px-Coat_of_arms_of_West_Kalimantan.svg.png"
+    },
+    {
+        "Provinsi": "West Nusa Tenggara",
+        "latitude": -8.6529334,
+        "longitude": 117.3616476,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Coat_of_arms_of_West_Nusa_Tenggara.svg/1200px-Coat_of_arms_of_West_Nusa_Tenggara.svg.png"
+    },
+    {
+        "Provinsi": "West Papua",
+        "latitude": -1.3361154,
+        "longitude": 133.1747162,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Coat_of_arms_of_West_Papua.svg/1200px-Coat_of_arms_of_West_Papua.svg.png"
+    },
+    {
+        "Provinsi": "West Sulawesi",
+        "latitude": -2.8441371,
+        "longitude": 119.2320784,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/81/Coat_of_arms_of_West_Sulawesi.png"
+    },
+    {
+        "Provinsi": "West Sumatra",
+        "latitude": -0.7399397,
+        "longitude": 100.8000051,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Coat_of_arms_of_West_Sumatra.svg/1200px-Coat_of_arms_of_West_Sumatra.svg.png"
+    },
+    {
+        "Provinsi": "Yogyakarta",
+        "latitude": -7.8753849,
+        "longitude": 110.4262088,
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Coat_of_arms_of_Yogyakarta.svg/1200px-Coat_of_arms_of_Yogyakarta.svg.png"
+    }
+]
