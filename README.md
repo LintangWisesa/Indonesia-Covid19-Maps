@@ -2,20 +2,26 @@
 
 # Indonesia Covid-19 Cases Maps
 
+__✅ *Preview: [bit.ly/cov19id](https://lintangwisesa.github.io/Indonesia-Covid19-Maps/) (_daily update!_)*__
+
+![screenshot](https://raw.githubusercontent.com/LintangWisesa/Indonesia-Covid19-Maps/master/img/screenshot.png)
+
+<hr>
+
 __🔧 *Tools*__
 
 1. __Data source:__ [2020 Corona Virus Pandemic in Indonesia (Wikipedia)](https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia)
 2. __Data analytics:__ Python, Numpy, Pandas & Matplotlib
 3. __Maps:__ Open Street Map, Folium & Leaflet.js
 
-#
+<hr>
 
-__⭐ *Result*__
+__⭐ *Documentation*__
 
-1. __Result Page:__ [click here](https://lintangwisesa.github.io/Indonesia-Covid19-Maps/) (_daily update!_)
-2. __Exploratory Data Analysis:__ [click here](https://github.com/LintangWisesa/Indonesia-Covid19-Maps/blob/master/0_eda.ipynb)
+1. __Result Page:__ [bit.ly/cov19id](https://lintangwisesa.github.io/Indonesia-Covid19-Maps/) (_daily update!_)
+2. __Exploratory Data Analysis:__ [go to .ipynb file](https://github.com/LintangWisesa/Indonesia-Covid19-Maps/blob/master/0_eda.ipynb)
 
-#
+<hr>
 
 #### Lintang Wisesa :love_letter: _lintangwisesa@ymail.com_
 
