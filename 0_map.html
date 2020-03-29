@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_0a64a2bc776c4875949f2e4a157c8622 {
+                #map_50fd52c4f6fb4c6eb8010fb655dca7c9 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -33,36 +33,43 @@
             </style>
         
     
-                <style>
-                    #float_image_3f49a9dbe7114a919fc5757fb52ba478 {
-                        position:absolute;
-                        bottom:3%;
-                        left:77%;
-                        }
-                </style>
+        <style>
+            #float_image_203fe413a58a4b00a105fda63c38f5ff {
+                position:absolute;
+                top:20px;
+                right:20px;
+            }
+            #float_image_52ffe00c3c3241b8a72866b9780256e8 {
+                position:absolute;
+                bottom:20px;
+                right:20px;
+            }
+            @media screen and (max-width: 900px){
+                #float_image_203fe413a58a4b00a105fda63c38f5ff {
+                    height: 57px;
+                    width: 160px;
+                }
+                #float_image_52ffe00c3c3241b8a72866b9780256e8 {
+                    height: 43px;
+                    width: 149px;
+                }
+            }
             
-    
-                <style>
-                    #float_image_fe2ab624cb594613abfab3ecf4ccfcb1 {
-                        position:absolute;
-                        bottom:80%;
-                        left:75%;
-                        }
-                </style>
+        </style>
             
 </head>
 <body>    
     
-            <div class="folium-map" id="map_0a64a2bc776c4875949f2e4a157c8622" ></div>
+            <div class="folium-map" id="map_50fd52c4f6fb4c6eb8010fb655dca7c9" ></div>
         
     
-            <img id="float_image_3f49a9dbe7114a919fc5757fb52ba478" alt="float_image"
+            <img id="float_image_52ffe00c3c3241b8a72866b9780256e8" alt="float_image"
                  src="https://raw.githubusercontent.com/LintangWisesa/Indonesia-Covid19-Maps/master/img/simplinnovation.png"
                  style="z-index: 999999">
             </img>
             
     
-            <img id="float_image_fe2ab624cb594613abfab3ecf4ccfcb1" alt="float_image"
+            <img id="float_image_203fe413a58a4b00a105fda63c38f5ff" alt="float_image"
                  src="https://raw.githubusercontent.com/LintangWisesa/Indonesia-Covid19-Maps/master/img/indonesiaupdate.png"
                  style="z-index: 999999">
             </img>
@@ -70,8 +77,8 @@
 </body>
 <script>    
     
-            var map_0a64a2bc776c4875949f2e4a157c8622 = L.map(
-                "map_0a64a2bc776c4875949f2e4a157c8622",
+            var map_50fd52c4f6fb4c6eb8010fb655dca7c9 = L.map(
+                "map_50fd52c4f6fb4c6eb8010fb655dca7c9",
                 {
                     center: [-0.5273, 118.6963],
                     crs: L.CRS.EPSG3857,
@@ -85,36 +92,36 @@
 
         
     
-            var tile_layer_e7d8461d35c94a9baf4fe49b83d0ce66 = L.tileLayer(
+            var tile_layer_d0d88fa2ed584eaabd45000c999c0de8 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_15b077441bd1483f877e2338d8e0821b = L.marker(
+            var marker_d613dba6ddaa408f8a8c3530a060d033 = L.marker(
                 [4.695135, 96.7493993],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_b4a56f76d7dd45d185446f4da85d7b5e = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Coat_of_arms_of_Aceh.svg/1200px-Coat_of_arms_of_Aceh.svg.png"});
-        marker_15b077441bd1483f877e2338d8e0821b.setIcon(custom_icon_b4a56f76d7dd45d185446f4da85d7b5e);
+        var custom_icon_68f4333eef314bddb6dfa797b7ca820e = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Coat_of_arms_of_Aceh.svg/1200px-Coat_of_arms_of_Aceh.svg.png"});
+        marker_d613dba6ddaa408f8a8c3530a060d033.setIcon(custom_icon_68f4333eef314bddb6dfa797b7ca820e);
         
     
-        var popup_e0a73ae52363475491986264e2790c65 = L.popup({"maxWidth": "100%"});
+        var popup_922be461441e4ab9ad8624dd1db42328 = L.popup({"maxWidth": "100%"});
 
         
-            var html_4c39fd26773d4c5ab69a2c810883b286 = $(`<div id="html_4c39fd26773d4c5ab69a2c810883b286" style="width: 100.0%; height: 100.0%;"><h4><b>Aceh</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>4</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_e0a73ae52363475491986264e2790c65.setContent(html_4c39fd26773d4c5ab69a2c810883b286);
+            var html_61f366040776444ba912d7fc11434c99 = $(`<div id="html_61f366040776444ba912d7fc11434c99" style="width: 100.0%; height: 100.0%;"><h4><b>Aceh</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>5</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_922be461441e4ab9ad8624dd1db42328.setContent(html_61f366040776444ba912d7fc11434c99);
         
 
-        marker_15b077441bd1483f877e2338d8e0821b.bindPopup(popup_e0a73ae52363475491986264e2790c65)
+        marker_d613dba6ddaa408f8a8c3530a060d033.bindPopup(popup_922be461441e4ab9ad8624dd1db42328)
         ;
 
         
     
     
-            marker_15b077441bd1483f877e2338d8e0821b.bindTooltip(
+            marker_d613dba6ddaa408f8a8c3530a060d033.bindTooltip(
                 `<div>
                      Aceh
                  </div>`,
@@ -122,36 +129,36 @@
             );
         
     
-            var circle_06895fdfe562434d83afcf6d0c923cfd = L.circle(
+            var circle_207501aa480343a9af48d0b7fc047918 = L.circle(
                 [4.695135, 96.7493993],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 400, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_c35d2147647043c88623025b2d720b95 = L.marker(
+            var marker_0d09f34d8dd14080846b3eb359ae5883 = L.marker(
                 [-8.4095178, 115.188916],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_b39bd49fd6a247aeb89aea8800c407e7 = L.icon({"iconSize": 35, "iconUrl": "https://4.bp.blogspot.com/-ELlrLdH0frM/WSz4AjqIWaI/AAAAAAAAASY/EF5ayA5zXn05TXw53cRUVTJeh6lzUJDDwCLcB/s400/Lambang%2BDaerah%2BProvinsi%2BBali%2B2.png"});
-        marker_c35d2147647043c88623025b2d720b95.setIcon(custom_icon_b39bd49fd6a247aeb89aea8800c407e7);
+        var custom_icon_fc622eb9ebc54528a4cf66621df71997 = L.icon({"iconSize": 35, "iconUrl": "https://4.bp.blogspot.com/-ELlrLdH0frM/WSz4AjqIWaI/AAAAAAAAASY/EF5ayA5zXn05TXw53cRUVTJeh6lzUJDDwCLcB/s400/Lambang%2BDaerah%2BProvinsi%2BBali%2B2.png"});
+        marker_0d09f34d8dd14080846b3eb359ae5883.setIcon(custom_icon_fc622eb9ebc54528a4cf66621df71997);
         
     
-        var popup_23600c3b8ae64985928e0fc9f63c0dbf = L.popup({"maxWidth": "100%"});
+        var popup_75b5e799968c414d93f2044cc32a5a24 = L.popup({"maxWidth": "100%"});
 
         
-            var html_c32b680306354364adb205448e472cd4 = $(`<div id="html_c32b680306354364adb205448e472cd4" style="width: 100.0%; height: 100.0%;"><h4><b>Bali</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>9</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>2</b></center></td></tr></table></div>`)[0];
-            popup_23600c3b8ae64985928e0fc9f63c0dbf.setContent(html_c32b680306354364adb205448e472cd4);
+            var html_631faa309434447eb373eebab020a01e = $(`<div id="html_631faa309434447eb373eebab020a01e" style="width: 100.0%; height: 100.0%;"><h4><b>Bali</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>10</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>2</b></center></td></tr></table></div>`)[0];
+            popup_75b5e799968c414d93f2044cc32a5a24.setContent(html_631faa309434447eb373eebab020a01e);
         
 
-        marker_c35d2147647043c88623025b2d720b95.bindPopup(popup_23600c3b8ae64985928e0fc9f63c0dbf)
+        marker_0d09f34d8dd14080846b3eb359ae5883.bindPopup(popup_75b5e799968c414d93f2044cc32a5a24)
         ;
 
         
     
     
-            marker_c35d2147647043c88623025b2d720b95.bindTooltip(
+            marker_0d09f34d8dd14080846b3eb359ae5883.bindTooltip(
                 `<div>
                      Bali
                  </div>`,
@@ -159,36 +166,36 @@
             );
         
     
-            var circle_c3933036230443e498b9645095c32214 = L.circle(
+            var circle_26d29f9826784e51bbf3557485b75bc8 = L.circle(
                 [-8.4095178, 115.188916],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 900, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_653e2474ba8b46fa8ae274c0abcda68d = L.marker(
+            var marker_1c8143097e7c43a29cfcc068b14cd972 = L.marker(
                 [-2.7410513, 106.4405872],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_d1c8b4cdc1884601a1db9ca2a60e1fa6 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Coat_of_arms_of_Bangka_Belitung_Islands.svg/1200px-Coat_of_arms_of_Bangka_Belitung_Islands.svg.png"});
-        marker_653e2474ba8b46fa8ae274c0abcda68d.setIcon(custom_icon_d1c8b4cdc1884601a1db9ca2a60e1fa6);
+        var custom_icon_ef7e7ed2f96a4070a9c74cb460ce51a3 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Coat_of_arms_of_Bangka_Belitung_Islands.svg/1200px-Coat_of_arms_of_Bangka_Belitung_Islands.svg.png"});
+        marker_1c8143097e7c43a29cfcc068b14cd972.setIcon(custom_icon_ef7e7ed2f96a4070a9c74cb460ce51a3);
         
     
-        var popup_46fcf24341b6489bb1208890d8ce5c5e = L.popup({"maxWidth": "100%"});
+        var popup_57972d3472334f08b71c780fc422f2aa = L.popup({"maxWidth": "100%"});
 
         
-            var html_49fb9814554e45848cfa29e8a69f0e56 = $(`<div id="html_49fb9814554e45848cfa29e8a69f0e56" style="width: 100.0%; height: 100.0%;"><h4><b>Bangka Belitung</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>0</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_46fcf24341b6489bb1208890d8ce5c5e.setContent(html_49fb9814554e45848cfa29e8a69f0e56);
+            var html_f9827f44d0f842c09f11e41ab5a1c176 = $(`<div id="html_f9827f44d0f842c09f11e41ab5a1c176" style="width: 100.0%; height: 100.0%;"><h4><b>Bangka Belitung</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>0</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_57972d3472334f08b71c780fc422f2aa.setContent(html_f9827f44d0f842c09f11e41ab5a1c176);
         
 
-        marker_653e2474ba8b46fa8ae274c0abcda68d.bindPopup(popup_46fcf24341b6489bb1208890d8ce5c5e)
+        marker_1c8143097e7c43a29cfcc068b14cd972.bindPopup(popup_57972d3472334f08b71c780fc422f2aa)
         ;
 
         
     
     
-            marker_653e2474ba8b46fa8ae274c0abcda68d.bindTooltip(
+            marker_1c8143097e7c43a29cfcc068b14cd972.bindTooltip(
                 `<div>
                      Bangka Belitung
                  </div>`,
@@ -196,36 +203,36 @@
             );
         
     
-            var circle_d3934fdb124942a2964899c562d9cdb1 = L.circle(
+            var circle_7c3fbfa791aa40a9b23a245c5618ce37 = L.circle(
                 [-2.7410513, 106.4405872],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_ae1a15e4e243401bb8638a6f36998422 = L.marker(
+            var marker_356930e3f2e546fc94d4c79c9d050169 = L.marker(
                 [-6.4058171999999995, 106.0640179],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_f900ba9fc014486f819880fc8aebb29a = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Coat_of_arms_of_Banten.png"});
-        marker_ae1a15e4e243401bb8638a6f36998422.setIcon(custom_icon_f900ba9fc014486f819880fc8aebb29a);
+        var custom_icon_38c7d406e68e437582b4b2537a6a184d = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Coat_of_arms_of_Banten.png"});
+        marker_356930e3f2e546fc94d4c79c9d050169.setIcon(custom_icon_38c7d406e68e437582b4b2537a6a184d);
         
     
-        var popup_58907a0623724d1085483bbf66466036 = L.popup({"maxWidth": "100%"});
+        var popup_39746cb85a2d4cc796538f6d414efc41 = L.popup({"maxWidth": "100%"});
 
         
-            var html_a13e1e2a4d0c445fa7e400b9c5df23f9 = $(`<div id="html_a13e1e2a4d0c445fa7e400b9c5df23f9" style="width: 100.0%; height: 100.0%;"><h4><b>Banten</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>103</b></center></td><td><center><b style='color:green'>1</b></center></td><td><center><b>4</b></center></td></tr></table></div>`)[0];
-            popup_58907a0623724d1085483bbf66466036.setContent(html_a13e1e2a4d0c445fa7e400b9c5df23f9);
+            var html_278806720467483fbc29d393cf7d1cd8 = $(`<div id="html_278806720467483fbc29d393cf7d1cd8" style="width: 100.0%; height: 100.0%;"><h4><b>Banten</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>106</b></center></td><td><center><b style='color:green'>1</b></center></td><td><center><b>4</b></center></td></tr></table></div>`)[0];
+            popup_39746cb85a2d4cc796538f6d414efc41.setContent(html_278806720467483fbc29d393cf7d1cd8);
         
 
-        marker_ae1a15e4e243401bb8638a6f36998422.bindPopup(popup_58907a0623724d1085483bbf66466036)
+        marker_356930e3f2e546fc94d4c79c9d050169.bindPopup(popup_39746cb85a2d4cc796538f6d414efc41)
         ;
 
         
     
     
-            marker_ae1a15e4e243401bb8638a6f36998422.bindTooltip(
+            marker_356930e3f2e546fc94d4c79c9d050169.bindTooltip(
                 `<div>
                      Banten
                  </div>`,
@@ -233,36 +240,36 @@
             );
         
     
-            var circle_d6d4ae289e05402baa722ce234592aaa = L.circle(
+            var circle_7f06765946ef4f0ba7aa6dbd68503ff3 = L.circle(
                 [-6.4058171999999995, 106.0640179],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10300, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10600, "stroke": true, "weight": 3}
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_951473bc42a849c9b580822f10e10237 = L.marker(
+            var marker_94f6d4ea08c446418129ca5e4453dcc2 = L.marker(
                 [-3.5778471, 102.3463875],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_e7bdc23f6cd34b39b8efd14ca2e68441 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Coat_of_arms_of_Bengkulu.png"});
-        marker_951473bc42a849c9b580822f10e10237.setIcon(custom_icon_e7bdc23f6cd34b39b8efd14ca2e68441);
+        var custom_icon_33161fb422e742d1a1b9212334b35a28 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Coat_of_arms_of_Bengkulu.png"});
+        marker_94f6d4ea08c446418129ca5e4453dcc2.setIcon(custom_icon_33161fb422e742d1a1b9212334b35a28);
         
     
-        var popup_7a7937aaccb04131bf4e9a4a5c6eb9d9 = L.popup({"maxWidth": "100%"});
+        var popup_0e0123f0f5934283bcfe84850b468f92 = L.popup({"maxWidth": "100%"});
 
         
-            var html_5d5f5168ed0d4a8fba65c5b7072f828a = $(`<div id="html_5d5f5168ed0d4a8fba65c5b7072f828a" style="width: 100.0%; height: 100.0%;"><h4><b>Bengkulu</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>0</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_7a7937aaccb04131bf4e9a4a5c6eb9d9.setContent(html_5d5f5168ed0d4a8fba65c5b7072f828a);
+            var html_da7065c0789349f293526d8e7851d4f0 = $(`<div id="html_da7065c0789349f293526d8e7851d4f0" style="width: 100.0%; height: 100.0%;"><h4><b>Bengkulu</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>0</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_0e0123f0f5934283bcfe84850b468f92.setContent(html_da7065c0789349f293526d8e7851d4f0);
         
 
-        marker_951473bc42a849c9b580822f10e10237.bindPopup(popup_7a7937aaccb04131bf4e9a4a5c6eb9d9)
+        marker_94f6d4ea08c446418129ca5e4453dcc2.bindPopup(popup_0e0123f0f5934283bcfe84850b468f92)
         ;
 
         
     
     
-            marker_951473bc42a849c9b580822f10e10237.bindTooltip(
+            marker_94f6d4ea08c446418129ca5e4453dcc2.bindTooltip(
                 `<div>
                      Bengkulu
                  </div>`,
@@ -270,36 +277,36 @@
             );
         
     
-            var circle_5bf0e6ce9e964cd0a769c71929fdf5ef = L.circle(
+            var circle_738478503462456c9b5fa83570416d40 = L.circle(
                 [-3.5778471, 102.3463875],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_103295520b804b9e90cbdf3f1d3f422e = L.marker(
+            var marker_2a64680d6e6b4e9fb3c8891edf000201 = L.marker(
                 [-7.150975, 110.1402594],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_6471cbbcf3ab4aabbc5c53a14a9cbdac = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Jawa_Tengah_Logo.svg/526px-Jawa_Tengah_Logo.svg.png"});
-        marker_103295520b804b9e90cbdf3f1d3f422e.setIcon(custom_icon_6471cbbcf3ab4aabbc5c53a14a9cbdac);
+        var custom_icon_10945883bdba479eabfd350a54bba279 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Jawa_Tengah_Logo.svg/526px-Jawa_Tengah_Logo.svg.png"});
+        marker_2a64680d6e6b4e9fb3c8891edf000201.setIcon(custom_icon_10945883bdba479eabfd350a54bba279);
         
     
-        var popup_e52669287ed140f78a64f06d0567d352 = L.popup({"maxWidth": "100%"});
+        var popup_7cbaa077f4314f7bac6406c3ce6f05fc = L.popup({"maxWidth": "100%"});
 
         
-            var html_56bbb04fa51549d0add4530529366876 = $(`<div id="html_56bbb04fa51549d0add4530529366876" style="width: 100.0%; height: 100.0%;"><h4><b>Central Java</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>55</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>7</b></center></td></tr></table></div>`)[0];
-            popup_e52669287ed140f78a64f06d0567d352.setContent(html_56bbb04fa51549d0add4530529366876);
+            var html_6459d18eb408434cae7d7d25fa280169 = $(`<div id="html_6459d18eb408434cae7d7d25fa280169" style="width: 100.0%; height: 100.0%;"><h4><b>Central Java</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>63</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>7</b></center></td></tr></table></div>`)[0];
+            popup_7cbaa077f4314f7bac6406c3ce6f05fc.setContent(html_6459d18eb408434cae7d7d25fa280169);
         
 
-        marker_103295520b804b9e90cbdf3f1d3f422e.bindPopup(popup_e52669287ed140f78a64f06d0567d352)
+        marker_2a64680d6e6b4e9fb3c8891edf000201.bindPopup(popup_7cbaa077f4314f7bac6406c3ce6f05fc)
         ;
 
         
     
     
-            marker_103295520b804b9e90cbdf3f1d3f422e.bindTooltip(
+            marker_2a64680d6e6b4e9fb3c8891edf000201.bindTooltip(
                 `<div>
                      Central Java
                  </div>`,
@@ -307,36 +314,36 @@
             );
         
     
-            var circle_52f13b2f55a544738c2308f14c95c60c = L.circle(
+            var circle_573558513541498497a145f440ff3ebc = L.circle(
                 [-7.150975, 110.1402594],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5500, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6300, "stroke": true, "weight": 3}
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_88872ad8b78d4f9ab3cdfe82faad1945 = L.marker(
+            var marker_e69f6f0103e843d78b02248e7c87fbac = L.marker(
                 [-1.6814878, 113.3823545],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_cd5ab3319e3440789e2c62d222da1f6e = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Coat_of_arms_of_Central_Kalimantan.png"});
-        marker_88872ad8b78d4f9ab3cdfe82faad1945.setIcon(custom_icon_cd5ab3319e3440789e2c62d222da1f6e);
+        var custom_icon_f4ad8059520243f3bbbe7c1fc62f1338 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Coat_of_arms_of_Central_Kalimantan.png"});
+        marker_e69f6f0103e843d78b02248e7c87fbac.setIcon(custom_icon_f4ad8059520243f3bbbe7c1fc62f1338);
         
     
-        var popup_38bc0831a0b149da9d5b85c5462f8d25 = L.popup({"maxWidth": "100%"});
+        var popup_496ff50e6bea424fb43b30f7a32ad6bf = L.popup({"maxWidth": "100%"});
 
         
-            var html_f5578f179e764d20809140ebee55d25e = $(`<div id="html_f5578f179e764d20809140ebee55d25e" style="width: 100.0%; height: 100.0%;"><h4><b>Central Kalimantan</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>7</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_38bc0831a0b149da9d5b85c5462f8d25.setContent(html_f5578f179e764d20809140ebee55d25e);
+            var html_6b2b1279c206405b8d2baef42fe2ed18 = $(`<div id="html_6b2b1279c206405b8d2baef42fe2ed18" style="width: 100.0%; height: 100.0%;"><h4><b>Central Kalimantan</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>7</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_496ff50e6bea424fb43b30f7a32ad6bf.setContent(html_6b2b1279c206405b8d2baef42fe2ed18);
         
 
-        marker_88872ad8b78d4f9ab3cdfe82faad1945.bindPopup(popup_38bc0831a0b149da9d5b85c5462f8d25)
+        marker_e69f6f0103e843d78b02248e7c87fbac.bindPopup(popup_496ff50e6bea424fb43b30f7a32ad6bf)
         ;
 
         
     
     
-            marker_88872ad8b78d4f9ab3cdfe82faad1945.bindTooltip(
+            marker_e69f6f0103e843d78b02248e7c87fbac.bindTooltip(
                 `<div>
                      Central Kalimantan
                  </div>`,
@@ -344,36 +351,36 @@
             );
         
     
-            var circle_d995fb8802d74567a4183ccd65c7174c = L.circle(
+            var circle_107a008f07a44327b5be82e696f4532f = L.circle(
                 [-1.6814878, 113.3823545],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 700, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_0b14b69873f34a738af7acc68c0ed70c = L.marker(
+            var marker_1d46a419771f40f2bea78d35d7d8f26b = L.marker(
                 [-1.4300254, 121.4456179],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_13d398f1ead945438fd81835845abfdb = L.icon({"iconSize": 35, "iconUrl": "http://1.bp.blogspot.com/-Mb3OPbim3Gw/VrYYo_59GjI/AAAAAAAAVFw/oh24hNmZ1NU/s1600/LOGO%2BSULAWESI%2BTENGAH.png"});
-        marker_0b14b69873f34a738af7acc68c0ed70c.setIcon(custom_icon_13d398f1ead945438fd81835845abfdb);
+        var custom_icon_def7b93360804743854db7b054716f96 = L.icon({"iconSize": 35, "iconUrl": "http://1.bp.blogspot.com/-Mb3OPbim3Gw/VrYYo_59GjI/AAAAAAAAVFw/oh24hNmZ1NU/s1600/LOGO%2BSULAWESI%2BTENGAH.png"});
+        marker_1d46a419771f40f2bea78d35d7d8f26b.setIcon(custom_icon_def7b93360804743854db7b054716f96);
         
     
-        var popup_3db850d110df434aaccfb97da7092190 = L.popup({"maxWidth": "100%"});
+        var popup_50200fc5108646538ebed6230d03663e = L.popup({"maxWidth": "100%"});
 
         
-            var html_7c9bb7cbaf914ac7bc5c8de8aead44ef = $(`<div id="html_7c9bb7cbaf914ac7bc5c8de8aead44ef" style="width: 100.0%; height: 100.0%;"><h4><b>Central Sulawesi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_3db850d110df434aaccfb97da7092190.setContent(html_7c9bb7cbaf914ac7bc5c8de8aead44ef);
+            var html_dce654b52cdd433aaefd35b341bb9c2a = $(`<div id="html_dce654b52cdd433aaefd35b341bb9c2a" style="width: 100.0%; height: 100.0%;"><h4><b>Central Sulawesi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_50200fc5108646538ebed6230d03663e.setContent(html_dce654b52cdd433aaefd35b341bb9c2a);
         
 
-        marker_0b14b69873f34a738af7acc68c0ed70c.bindPopup(popup_3db850d110df434aaccfb97da7092190)
+        marker_1d46a419771f40f2bea78d35d7d8f26b.bindPopup(popup_50200fc5108646538ebed6230d03663e)
         ;
 
         
     
     
-            marker_0b14b69873f34a738af7acc68c0ed70c.bindTooltip(
+            marker_1d46a419771f40f2bea78d35d7d8f26b.bindTooltip(
                 `<div>
                      Central Sulawesi
                  </div>`,
@@ -381,36 +388,36 @@
             );
         
     
-            var circle_e13e2b1fae5f44e2814bde5b3ce227ab = L.circle(
+            var circle_4e07b5abb41b4c99a36f2916d629f386 = L.circle(
                 [-1.4300254, 121.4456179],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_fb70163a654c4134951106d543c9a176 = L.marker(
+            var marker_a0a4506d72b94b0caf66ebc117c21f27 = L.marker(
                 [-7.5360639, 112.2384017],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_19747b075ec14ce9bd76de74ee7825e2 = L.icon({"iconSize": 35, "iconUrl": "https://2.bp.blogspot.com/-S1hrqQnm0nc/XDCpZ6C7iSI/AAAAAAAABvI/MlNdKdkNBHQa0lU-1I0gyTT5FbFSR2K0QCLcBGAs/s400/logo%2Bprovinsi%2Bjawa%2Btimur.png"});
-        marker_fb70163a654c4134951106d543c9a176.setIcon(custom_icon_19747b075ec14ce9bd76de74ee7825e2);
+        var custom_icon_d1525795bac64af88940e3029c74d955 = L.icon({"iconSize": 35, "iconUrl": "https://2.bp.blogspot.com/-S1hrqQnm0nc/XDCpZ6C7iSI/AAAAAAAABvI/MlNdKdkNBHQa0lU-1I0gyTT5FbFSR2K0QCLcBGAs/s400/logo%2Bprovinsi%2Bjawa%2Btimur.png"});
+        marker_a0a4506d72b94b0caf66ebc117c21f27.setIcon(custom_icon_d1525795bac64af88940e3029c74d955);
         
     
-        var popup_38758bb7517e4be6a6e8b9740ad1ac9f = L.popup({"maxWidth": "100%"});
+        var popup_340b534f4fad4f4ebeee592584a1a5fe = L.popup({"maxWidth": "100%"});
 
         
-            var html_fd135dde2be44559bb478a01f0f0ca39 = $(`<div id="html_fd135dde2be44559bb478a01f0f0ca39" style="width: 100.0%; height: 100.0%;"><h4><b>East Java</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>77</b></center></td><td><center><b style='color:green'>8</b></center></td><td><center><b>4</b></center></td></tr></table></div>`)[0];
-            popup_38758bb7517e4be6a6e8b9740ad1ac9f.setContent(html_fd135dde2be44559bb478a01f0f0ca39);
+            var html_a11571a028f740c5aa4c0bdbecca39e2 = $(`<div id="html_a11571a028f740c5aa4c0bdbecca39e2" style="width: 100.0%; height: 100.0%;"><h4><b>East Java</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>90</b></center></td><td><center><b style='color:green'>11</b></center></td><td><center><b>7</b></center></td></tr></table></div>`)[0];
+            popup_340b534f4fad4f4ebeee592584a1a5fe.setContent(html_a11571a028f740c5aa4c0bdbecca39e2);
         
 
-        marker_fb70163a654c4134951106d543c9a176.bindPopup(popup_38758bb7517e4be6a6e8b9740ad1ac9f)
+        marker_a0a4506d72b94b0caf66ebc117c21f27.bindPopup(popup_340b534f4fad4f4ebeee592584a1a5fe)
         ;
 
         
     
     
-            marker_fb70163a654c4134951106d543c9a176.bindTooltip(
+            marker_a0a4506d72b94b0caf66ebc117c21f27.bindTooltip(
                 `<div>
                      East Java
                  </div>`,
@@ -418,36 +425,36 @@
             );
         
     
-            var circle_ff1047212a8342859ce3589e0b1cd07d = L.circle(
+            var circle_08593d5b3b78449ea138a5ec537e07e6 = L.circle(
                 [-7.5360639, 112.2384017],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7700, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9000, "stroke": true, "weight": 3}
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_202a389451954e878f4aa2edaae86188 = L.marker(
+            var marker_bbf27d3219ae43a6ac1d3742230067f7 = L.marker(
                 [1.6406296, 116.419389],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_34733b6f0f374cc6a1483886774e5715 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Coat_of_arms_of_East_Kalimantan.svg/1200px-Coat_of_arms_of_East_Kalimantan.svg.png"});
-        marker_202a389451954e878f4aa2edaae86188.setIcon(custom_icon_34733b6f0f374cc6a1483886774e5715);
+        var custom_icon_979f425cea574391bff6812bb122a58e = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Coat_of_arms_of_East_Kalimantan.svg/1200px-Coat_of_arms_of_East_Kalimantan.svg.png"});
+        marker_bbf27d3219ae43a6ac1d3742230067f7.setIcon(custom_icon_979f425cea574391bff6812bb122a58e);
         
     
-        var popup_c863241e06a049cc857dbb49fc15f15d = L.popup({"maxWidth": "100%"});
+        var popup_8c005afbd6d94a38bff9aec620f2e2fb = L.popup({"maxWidth": "100%"});
 
         
-            var html_3fa45f357e044c6e9e96504d8fc6433e = $(`<div id="html_3fa45f357e044c6e9e96504d8fc6433e" style="width: 100.0%; height: 100.0%;"><h4><b>East Kalimantan</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>17</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_c863241e06a049cc857dbb49fc15f15d.setContent(html_3fa45f357e044c6e9e96504d8fc6433e);
+            var html_e7834eda622d42af839e17d679b2ecee = $(`<div id="html_e7834eda622d42af839e17d679b2ecee" style="width: 100.0%; height: 100.0%;"><h4><b>East Kalimantan</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>17</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_8c005afbd6d94a38bff9aec620f2e2fb.setContent(html_e7834eda622d42af839e17d679b2ecee);
         
 
-        marker_202a389451954e878f4aa2edaae86188.bindPopup(popup_c863241e06a049cc857dbb49fc15f15d)
+        marker_bbf27d3219ae43a6ac1d3742230067f7.bindPopup(popup_8c005afbd6d94a38bff9aec620f2e2fb)
         ;
 
         
     
     
-            marker_202a389451954e878f4aa2edaae86188.bindTooltip(
+            marker_bbf27d3219ae43a6ac1d3742230067f7.bindTooltip(
                 `<div>
                      East Kalimantan
                  </div>`,
@@ -455,36 +462,36 @@
             );
         
     
-            var circle_bf02a6fc37a440098e9093372bd63827 = L.circle(
+            var circle_9b6558022eb442b99438cdda0f0268b0 = L.circle(
                 [1.6406296, 116.419389],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1700, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_3af5a96745a14326a9fe482f3827b232 = L.marker(
+            var marker_0c5a1de1f011470f878985b2902a2f8c = L.marker(
                 [-8.6573819, 121.0793705],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_c394d5c409c7439abbce9e1315c6a2f1 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Coat_of_arms_of_East_Nusa_Tenggara.svg/1200px-Coat_of_arms_of_East_Nusa_Tenggara.svg.png"});
-        marker_3af5a96745a14326a9fe482f3827b232.setIcon(custom_icon_c394d5c409c7439abbce9e1315c6a2f1);
+        var custom_icon_99cf588645284d4a993e53ec8197a3d3 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Coat_of_arms_of_East_Nusa_Tenggara.svg/1200px-Coat_of_arms_of_East_Nusa_Tenggara.svg.png"});
+        marker_0c5a1de1f011470f878985b2902a2f8c.setIcon(custom_icon_99cf588645284d4a993e53ec8197a3d3);
         
     
-        var popup_d0348644ea5142ed95740c1cd2c1bfe7 = L.popup({"maxWidth": "100%"});
+        var popup_3a722e6ad57243b1a6b324408ddfcfa7 = L.popup({"maxWidth": "100%"});
 
         
-            var html_64189b8da23144ca98bc4600fa6d587f = $(`<div id="html_64189b8da23144ca98bc4600fa6d587f" style="width: 100.0%; height: 100.0%;"><h4><b>East Nusa Tenggara</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>0</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_d0348644ea5142ed95740c1cd2c1bfe7.setContent(html_64189b8da23144ca98bc4600fa6d587f);
+            var html_ab02c0c6ba2b4196b47ad671ee57de7f = $(`<div id="html_ab02c0c6ba2b4196b47ad671ee57de7f" style="width: 100.0%; height: 100.0%;"><h4><b>East Nusa Tenggara</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>0</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_3a722e6ad57243b1a6b324408ddfcfa7.setContent(html_ab02c0c6ba2b4196b47ad671ee57de7f);
         
 
-        marker_3af5a96745a14326a9fe482f3827b232.bindPopup(popup_d0348644ea5142ed95740c1cd2c1bfe7)
+        marker_0c5a1de1f011470f878985b2902a2f8c.bindPopup(popup_3a722e6ad57243b1a6b324408ddfcfa7)
         ;
 
         
     
     
-            marker_3af5a96745a14326a9fe482f3827b232.bindTooltip(
+            marker_0c5a1de1f011470f878985b2902a2f8c.bindTooltip(
                 `<div>
                      East Nusa Tenggara
                  </div>`,
@@ -492,36 +499,36 @@
             );
         
     
-            var circle_c58ba851c75c4ccf8722da9a4e48e9db = L.circle(
+            var circle_8d0ea6b6cbd744739a2265d488c1f1ba = L.circle(
                 [-8.6573819, 121.0793705],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_20bdb21af3d849f881bd71eab272971f = L.marker(
+            var marker_e63d43537b584a3e95635d919dd81c5c = L.marker(
                 [0.6999371999999999, 122.4467238],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_936a38571a0e452e971fb65738b48b5f = L.icon({"iconSize": 35, "iconUrl": "https://3.bp.blogspot.com/-75ec3fJKhgU/UNl0Tdg9UXI/AAAAAAAAIrg/YztGIINVa2w/s1600/LOGO+PROVINSI+GORONTALO.png"});
-        marker_20bdb21af3d849f881bd71eab272971f.setIcon(custom_icon_936a38571a0e452e971fb65738b48b5f);
+        var custom_icon_015eea1d98d9421eb798ca3bd44e1172 = L.icon({"iconSize": 35, "iconUrl": "https://3.bp.blogspot.com/-75ec3fJKhgU/UNl0Tdg9UXI/AAAAAAAAIrg/YztGIINVa2w/s1600/LOGO+PROVINSI+GORONTALO.png"});
+        marker_e63d43537b584a3e95635d919dd81c5c.setIcon(custom_icon_015eea1d98d9421eb798ca3bd44e1172);
         
     
-        var popup_7cebd6037d064d0481fd80e7ce4ce11c = L.popup({"maxWidth": "100%"});
+        var popup_44fe56718e8049759445384bb2bc87b1 = L.popup({"maxWidth": "100%"});
 
         
-            var html_0ce746140bc7439eb41692519ec66a2d = $(`<div id="html_0ce746140bc7439eb41692519ec66a2d" style="width: 100.0%; height: 100.0%;"><h4><b>Gorontalo</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>0</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_7cebd6037d064d0481fd80e7ce4ce11c.setContent(html_0ce746140bc7439eb41692519ec66a2d);
+            var html_aa8f33be394f4fb9b4446007948d66b2 = $(`<div id="html_aa8f33be394f4fb9b4446007948d66b2" style="width: 100.0%; height: 100.0%;"><h4><b>Gorontalo</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>0</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_44fe56718e8049759445384bb2bc87b1.setContent(html_aa8f33be394f4fb9b4446007948d66b2);
         
 
-        marker_20bdb21af3d849f881bd71eab272971f.bindPopup(popup_7cebd6037d064d0481fd80e7ce4ce11c)
+        marker_e63d43537b584a3e95635d919dd81c5c.bindPopup(popup_44fe56718e8049759445384bb2bc87b1)
         ;
 
         
     
     
-            marker_20bdb21af3d849f881bd71eab272971f.bindTooltip(
+            marker_e63d43537b584a3e95635d919dd81c5c.bindTooltip(
                 `<div>
                      Gorontalo
                  </div>`,
@@ -529,36 +536,36 @@
             );
         
     
-            var circle_3896045045cd4ec8922c1294810511c9 = L.circle(
+            var circle_e1fe86862e8341c1a1257fdec75a913e = L.circle(
                 [0.6999371999999999, 122.4467238],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_f4172da1b2c248e898d60a216fc26795 = L.marker(
+            var marker_e337d635308d4ca48262460009e6d63a = L.marker(
                 [-6.211544, 106.845172],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_5686ef6283504ea9a596799abc4b8a42 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Jakarta.svg/1200px-Coat_of_arms_of_Jakarta.svg.png"});
-        marker_f4172da1b2c248e898d60a216fc26795.setIcon(custom_icon_5686ef6283504ea9a596799abc4b8a42);
+        var custom_icon_e25c240cdee444d196cccd5e39e69cf0 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Jakarta.svg/1200px-Coat_of_arms_of_Jakarta.svg.png"});
+        marker_e337d635308d4ca48262460009e6d63a.setIcon(custom_icon_e25c240cdee444d196cccd5e39e69cf0);
         
     
-        var popup_bbb4bfd33cc64feab51627db16e3613e = L.popup({"maxWidth": "100%"});
+        var popup_9d6af5fd5cd04d33acfb15a83fbd7497 = L.popup({"maxWidth": "100%"});
 
         
-            var html_3922a20295a044268b79fdcfd9b3be99 = $(`<div id="html_3922a20295a044268b79fdcfd9b3be99" style="width: 100.0%; height: 100.0%;"><h4><b>Jakarta</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>627</b></center></td><td><center><b style='color:green'>43</b></center></td><td><center><b>62</b></center></td></tr></table></div>`)[0];
-            popup_bbb4bfd33cc64feab51627db16e3613e.setContent(html_3922a20295a044268b79fdcfd9b3be99);
+            var html_c0be3b2a6fc34ada91a6415d1157297e = $(`<div id="html_c0be3b2a6fc34ada91a6415d1157297e" style="width: 100.0%; height: 100.0%;"><h4><b>Jakarta</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>675</b></center></td><td><center><b style='color:green'>45</b></center></td><td><center><b>68</b></center></td></tr></table></div>`)[0];
+            popup_9d6af5fd5cd04d33acfb15a83fbd7497.setContent(html_c0be3b2a6fc34ada91a6415d1157297e);
         
 
-        marker_f4172da1b2c248e898d60a216fc26795.bindPopup(popup_bbb4bfd33cc64feab51627db16e3613e)
+        marker_e337d635308d4ca48262460009e6d63a.bindPopup(popup_9d6af5fd5cd04d33acfb15a83fbd7497)
         ;
 
         
     
     
-            marker_f4172da1b2c248e898d60a216fc26795.bindTooltip(
+            marker_e337d635308d4ca48262460009e6d63a.bindTooltip(
                 `<div>
                      Jakarta
                  </div>`,
@@ -566,36 +573,36 @@
             );
         
     
-            var circle_430a0e84a6674f328268e3b5d498a358 = L.circle(
+            var circle_14bbdb1c4bc24ce193c9e9daf2952138 = L.circle(
                 [-6.211544, 106.845172],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 62700, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 67500, "stroke": true, "weight": 3}
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_3aeef6fc5367436bbb09d4d23634c2d9 = L.marker(
+            var marker_71a2dcf6883c412faa9840c9330a3506 = L.marker(
                 [-1.4851831, 102.4380581],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_d3cc6f74ccd64f66a7c01743ef9c49e2 = L.icon({"iconSize": 35, "iconUrl": "https://2.bp.blogspot.com/-y0bGVkW2XfY/Tdui2omcCgI/AAAAAAAADro/Ufjlj4w8nhs/s1600/logo+Jambi.png"});
-        marker_3aeef6fc5367436bbb09d4d23634c2d9.setIcon(custom_icon_d3cc6f74ccd64f66a7c01743ef9c49e2);
+        var custom_icon_e25a1d28b7574230b6dcd6db7b2691e2 = L.icon({"iconSize": 35, "iconUrl": "https://2.bp.blogspot.com/-y0bGVkW2XfY/Tdui2omcCgI/AAAAAAAADro/Ufjlj4w8nhs/s1600/logo+Jambi.png"});
+        marker_71a2dcf6883c412faa9840c9330a3506.setIcon(custom_icon_e25a1d28b7574230b6dcd6db7b2691e2);
         
     
-        var popup_6c864d27d436469ebe26e44a8a8f4c89 = L.popup({"maxWidth": "100%"});
+        var popup_68e70c10e7bd4e0ebe8f998311722505 = L.popup({"maxWidth": "100%"});
 
         
-            var html_43c6e76ec2d84cffb1141ee60793f0bb = $(`<div id="html_43c6e76ec2d84cffb1141ee60793f0bb" style="width: 100.0%; height: 100.0%;"><h4><b>Jambi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_6c864d27d436469ebe26e44a8a8f4c89.setContent(html_43c6e76ec2d84cffb1141ee60793f0bb);
+            var html_350ad5c0753b45fca3e83f2c5f8ee846 = $(`<div id="html_350ad5c0753b45fca3e83f2c5f8ee846" style="width: 100.0%; height: 100.0%;"><h4><b>Jambi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_68e70c10e7bd4e0ebe8f998311722505.setContent(html_350ad5c0753b45fca3e83f2c5f8ee846);
         
 
-        marker_3aeef6fc5367436bbb09d4d23634c2d9.bindPopup(popup_6c864d27d436469ebe26e44a8a8f4c89)
+        marker_71a2dcf6883c412faa9840c9330a3506.bindPopup(popup_68e70c10e7bd4e0ebe8f998311722505)
         ;
 
         
     
     
-            marker_3aeef6fc5367436bbb09d4d23634c2d9.bindTooltip(
+            marker_71a2dcf6883c412faa9840c9330a3506.bindTooltip(
                 `<div>
                      Jambi
                  </div>`,
@@ -603,36 +610,36 @@
             );
         
     
-            var circle_f208e1be4ae64b4e85b0f1fd2cbd6e8d = L.circle(
+            var circle_bbf2436cd2df4aedb262d74fac283dd7 = L.circle(
                 [-1.4851831, 102.4380581],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_ef3cb7dbf23a4bb080f3cec63c7b4614 = L.marker(
+            var marker_6956dc4ee2324bdc925f497a8060de61 = L.marker(
                 [-4.5585849, 105.4068079],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_f314c067c78e415eaaf895a084ec4851 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Lampung_coa.png"});
-        marker_ef3cb7dbf23a4bb080f3cec63c7b4614.setIcon(custom_icon_f314c067c78e415eaaf895a084ec4851);
+        var custom_icon_d4305341d32843dc91480d943623b555 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Lampung_coa.png"});
+        marker_6956dc4ee2324bdc925f497a8060de61.setIcon(custom_icon_d4305341d32843dc91480d943623b555);
         
     
-        var popup_73bf43b94ec5403994281b18ca5f4887 = L.popup({"maxWidth": "100%"});
+        var popup_965135c264144ba992b88c1cb0940d9f = L.popup({"maxWidth": "100%"});
 
         
-            var html_cde3ddee81904fff94358f93a6df1673 = $(`<div id="html_cde3ddee81904fff94358f93a6df1673" style="width: 100.0%; height: 100.0%;"><h4><b>Lampung</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>4</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_73bf43b94ec5403994281b18ca5f4887.setContent(html_cde3ddee81904fff94358f93a6df1673);
+            var html_d2dff2c4d63245a69b2eddd460056809 = $(`<div id="html_d2dff2c4d63245a69b2eddd460056809" style="width: 100.0%; height: 100.0%;"><h4><b>Lampung</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>4</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_965135c264144ba992b88c1cb0940d9f.setContent(html_d2dff2c4d63245a69b2eddd460056809);
         
 
-        marker_ef3cb7dbf23a4bb080f3cec63c7b4614.bindPopup(popup_73bf43b94ec5403994281b18ca5f4887)
+        marker_6956dc4ee2324bdc925f497a8060de61.bindPopup(popup_965135c264144ba992b88c1cb0940d9f)
         ;
 
         
     
     
-            marker_ef3cb7dbf23a4bb080f3cec63c7b4614.bindTooltip(
+            marker_6956dc4ee2324bdc925f497a8060de61.bindTooltip(
                 `<div>
                      Lampung
                  </div>`,
@@ -640,36 +647,36 @@
             );
         
     
-            var circle_5fe46215fc89435fbcf6484aef23149c = L.circle(
+            var circle_48c2dfbde73e4a08a754352139f6750c = L.circle(
                 [-4.5585849, 105.4068079],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 400, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_422e853556d04303a9c79841ab55e60d = L.marker(
+            var marker_bee9edd7f17d4b81a123ccef81145ccd = L.marker(
                 [-3.2384616, 130.1452734],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_1b8ce1f7b828467da388029acbd514c4 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Lambang_Provinsi_Maluku.png"});
-        marker_422e853556d04303a9c79841ab55e60d.setIcon(custom_icon_1b8ce1f7b828467da388029acbd514c4);
+        var custom_icon_31eef121d9614f27b9ddda1f277c22cd = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Lambang_Provinsi_Maluku.png"});
+        marker_bee9edd7f17d4b81a123ccef81145ccd.setIcon(custom_icon_31eef121d9614f27b9ddda1f277c22cd);
         
     
-        var popup_f8a8b75957594f8cb36b2eebcd4a8d22 = L.popup({"maxWidth": "100%"});
+        var popup_41d96ce428d546018f1299bdb745bde4 = L.popup({"maxWidth": "100%"});
 
         
-            var html_3ccd18036839475495f58b087853215d = $(`<div id="html_3ccd18036839475495f58b087853215d" style="width: 100.0%; height: 100.0%;"><h4><b>Maluku</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_f8a8b75957594f8cb36b2eebcd4a8d22.setContent(html_3ccd18036839475495f58b087853215d);
+            var html_3498a1ce0fa14be1bf818e3c2b4c8079 = $(`<div id="html_3498a1ce0fa14be1bf818e3c2b4c8079" style="width: 100.0%; height: 100.0%;"><h4><b>Maluku</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_41d96ce428d546018f1299bdb745bde4.setContent(html_3498a1ce0fa14be1bf818e3c2b4c8079);
         
 
-        marker_422e853556d04303a9c79841ab55e60d.bindPopup(popup_f8a8b75957594f8cb36b2eebcd4a8d22)
+        marker_bee9edd7f17d4b81a123ccef81145ccd.bindPopup(popup_41d96ce428d546018f1299bdb745bde4)
         ;
 
         
     
     
-            marker_422e853556d04303a9c79841ab55e60d.bindTooltip(
+            marker_bee9edd7f17d4b81a123ccef81145ccd.bindTooltip(
                 `<div>
                      Maluku
                  </div>`,
@@ -677,36 +684,36 @@
             );
         
     
-            var circle_ebc0bc91aaf247d894714197f194f132 = L.circle(
+            var circle_e241200531af46af805441adfffb9457 = L.circle(
                 [-3.2384616, 130.1452734],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_4490615cf5c840028bc75b27f3263c19 = L.marker(
+            var marker_c0c004fa7e514f4db19736e9255f1ba5 = L.marker(
                 [1.5709993, 127.8087693],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_a5683b9fd443426ba70a58ff17163dd9 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Coat_of_arms_of_North_Maluku.png/1200px-Coat_of_arms_of_North_Maluku.png"});
-        marker_4490615cf5c840028bc75b27f3263c19.setIcon(custom_icon_a5683b9fd443426ba70a58ff17163dd9);
+        var custom_icon_b9476e1367d3431694bbd275f0d48c4f = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Coat_of_arms_of_North_Maluku.png/1200px-Coat_of_arms_of_North_Maluku.png"});
+        marker_c0c004fa7e514f4db19736e9255f1ba5.setIcon(custom_icon_b9476e1367d3431694bbd275f0d48c4f);
         
     
-        var popup_1c2a6b2e3ff240338934853eb5f7186d = L.popup({"maxWidth": "100%"});
+        var popup_f365ac9c55d84f639126769d78d58b45 = L.popup({"maxWidth": "100%"});
 
         
-            var html_0629c34e10404a4283dced95315f394e = $(`<div id="html_0629c34e10404a4283dced95315f394e" style="width: 100.0%; height: 100.0%;"><h4><b>North Maluku</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_1c2a6b2e3ff240338934853eb5f7186d.setContent(html_0629c34e10404a4283dced95315f394e);
+            var html_fe6f8ae058c2449f8f0de91e1efaebdd = $(`<div id="html_fe6f8ae058c2449f8f0de91e1efaebdd" style="width: 100.0%; height: 100.0%;"><h4><b>North Maluku</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_f365ac9c55d84f639126769d78d58b45.setContent(html_fe6f8ae058c2449f8f0de91e1efaebdd);
         
 
-        marker_4490615cf5c840028bc75b27f3263c19.bindPopup(popup_1c2a6b2e3ff240338934853eb5f7186d)
+        marker_c0c004fa7e514f4db19736e9255f1ba5.bindPopup(popup_f365ac9c55d84f639126769d78d58b45)
         ;
 
         
     
     
-            marker_4490615cf5c840028bc75b27f3263c19.bindTooltip(
+            marker_c0c004fa7e514f4db19736e9255f1ba5.bindTooltip(
                 `<div>
                      North Maluku
                  </div>`,
@@ -714,36 +721,36 @@
             );
         
     
-            var circle_03037305064b4f5295bdfdc84eb1b304 = L.circle(
+            var circle_5d18ed74b4c543a490d630acdc8c8219 = L.circle(
                 [1.5709993, 127.8087693],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_40a19caa96f041ec84c3f1a74625d4ee = L.marker(
+            var marker_80ad5dc6cc144db2ad7567f098935d9f = L.marker(
                 [1.5802128, 114.0308546],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_79eb850c256f4590878af4962f2e0a91 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Emblem_of_North_Kalimantan.png"});
-        marker_40a19caa96f041ec84c3f1a74625d4ee.setIcon(custom_icon_79eb850c256f4590878af4962f2e0a91);
+        var custom_icon_9d12d56c1a684cf7b555889cc2d48655 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Emblem_of_North_Kalimantan.png"});
+        marker_80ad5dc6cc144db2ad7567f098935d9f.setIcon(custom_icon_9d12d56c1a684cf7b555889cc2d48655);
         
     
-        var popup_ae40dd6212944010bdb3e3c6915a02c8 = L.popup({"maxWidth": "100%"});
+        var popup_4a667aee3d9b42e38b7cbf8a2764e432 = L.popup({"maxWidth": "100%"});
 
         
-            var html_97b83a1e18154b91affebcaf96fa1547 = $(`<div id="html_97b83a1e18154b91affebcaf96fa1547" style="width: 100.0%; height: 100.0%;"><h4><b>North Kalimantan</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_ae40dd6212944010bdb3e3c6915a02c8.setContent(html_97b83a1e18154b91affebcaf96fa1547);
+            var html_6326c360b4e44561a625d5ba9c8fb070 = $(`<div id="html_6326c360b4e44561a625d5ba9c8fb070" style="width: 100.0%; height: 100.0%;"><h4><b>North Kalimantan</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_4a667aee3d9b42e38b7cbf8a2764e432.setContent(html_6326c360b4e44561a625d5ba9c8fb070);
         
 
-        marker_40a19caa96f041ec84c3f1a74625d4ee.bindPopup(popup_ae40dd6212944010bdb3e3c6915a02c8)
+        marker_80ad5dc6cc144db2ad7567f098935d9f.bindPopup(popup_4a667aee3d9b42e38b7cbf8a2764e432)
         ;
 
         
     
     
-            marker_40a19caa96f041ec84c3f1a74625d4ee.bindTooltip(
+            marker_80ad5dc6cc144db2ad7567f098935d9f.bindTooltip(
                 `<div>
                      North Kalimantan
                  </div>`,
@@ -751,36 +758,36 @@
             );
         
     
-            var circle_1ea2dbf94a8042bbb4f0ad8e10e9b0c6 = L.circle(
+            var circle_831d3992fb0c42b0afef5e11076c0f4b = L.circle(
                 [1.5802128, 114.0308546],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_a5d45efdc89f4615bb962de890ca0f20 = L.marker(
+            var marker_dc11d3b62eae4e73a39854eb027e6788 = L.marker(
                 [0.6246932, 123.9750018],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_2467cf1c43fa402f802c1576da0260b5 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Coat_of_arms_of_North_Sulawesi.svg/1200px-Coat_of_arms_of_North_Sulawesi.svg.png"});
-        marker_a5d45efdc89f4615bb962de890ca0f20.setIcon(custom_icon_2467cf1c43fa402f802c1576da0260b5);
+        var custom_icon_4163405d3ae74e90bb0288795513dff3 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Coat_of_arms_of_North_Sulawesi.svg/1200px-Coat_of_arms_of_North_Sulawesi.svg.png"});
+        marker_dc11d3b62eae4e73a39854eb027e6788.setIcon(custom_icon_4163405d3ae74e90bb0288795513dff3);
         
     
-        var popup_643fd144cc5d4947bdeaebc6d37f1a88 = L.popup({"maxWidth": "100%"});
+        var popup_fbf4651fbb38493f8fe4085be3205fcc = L.popup({"maxWidth": "100%"});
 
         
-            var html_552612a05ea44fefa7b5a1b8b265b4c5 = $(`<div id="html_552612a05ea44fefa7b5a1b8b265b4c5" style="width: 100.0%; height: 100.0%;"><h4><b>North Sulawesi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_643fd144cc5d4947bdeaebc6d37f1a88.setContent(html_552612a05ea44fefa7b5a1b8b265b4c5);
+            var html_d226aac411dd47c4beaca5ca84de94de = $(`<div id="html_d226aac411dd47c4beaca5ca84de94de" style="width: 100.0%; height: 100.0%;"><h4><b>North Sulawesi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_fbf4651fbb38493f8fe4085be3205fcc.setContent(html_d226aac411dd47c4beaca5ca84de94de);
         
 
-        marker_a5d45efdc89f4615bb962de890ca0f20.bindPopup(popup_643fd144cc5d4947bdeaebc6d37f1a88)
+        marker_dc11d3b62eae4e73a39854eb027e6788.bindPopup(popup_fbf4651fbb38493f8fe4085be3205fcc)
         ;
 
         
     
     
-            marker_a5d45efdc89f4615bb962de890ca0f20.bindTooltip(
+            marker_dc11d3b62eae4e73a39854eb027e6788.bindTooltip(
                 `<div>
                      North Sulawesi
                  </div>`,
@@ -788,36 +795,36 @@
             );
         
     
-            var circle_f72533fabc4948978b8eefe54b8c3819 = L.circle(
+            var circle_06389bc35a84443ab816e17b1b6100f8 = L.circle(
                 [0.6246932, 123.9750018],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_36323d9fd6e641809e515c9fe97e82e8 = L.marker(
+            var marker_6bf7c1fbf9c74230b2f9d5dc55287928 = L.marker(
                 [2.1153547, 99.5450974],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_a3c36bb9a95d44679a456775012a8a2c = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Coat_of_arms_of_North_Sumatra.svg/1200px-Coat_of_arms_of_North_Sumatra.svg.png"});
-        marker_36323d9fd6e641809e515c9fe97e82e8.setIcon(custom_icon_a3c36bb9a95d44679a456775012a8a2c);
+        var custom_icon_0ed8c826ff964983a6c27ce2738cd3fa = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Coat_of_arms_of_North_Sumatra.svg/1200px-Coat_of_arms_of_North_Sumatra.svg.png"});
+        marker_6bf7c1fbf9c74230b2f9d5dc55287928.setIcon(custom_icon_0ed8c826ff964983a6c27ce2738cd3fa);
         
     
-        var popup_eb417c3092c74be39b23096ad8f181f6 = L.popup({"maxWidth": "100%"});
+        var popup_74c8655f1e6e415bbf294d6f0df18cd9 = L.popup({"maxWidth": "100%"});
 
         
-            var html_b8d92aafab594ba9b9361e58ce130fa4 = $(`<div id="html_b8d92aafab594ba9b9361e58ce130fa4" style="width: 100.0%; height: 100.0%;"><h4><b>North Sumatera</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>8</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>1</b></center></td></tr></table></div>`)[0];
-            popup_eb417c3092c74be39b23096ad8f181f6.setContent(html_b8d92aafab594ba9b9361e58ce130fa4);
+            var html_cd2f8d73560c4a918a9d7ce569172012 = $(`<div id="html_cd2f8d73560c4a918a9d7ce569172012" style="width: 100.0%; height: 100.0%;"><h4><b>North Sumatera</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>8</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>1</b></center></td></tr></table></div>`)[0];
+            popup_74c8655f1e6e415bbf294d6f0df18cd9.setContent(html_cd2f8d73560c4a918a9d7ce569172012);
         
 
-        marker_36323d9fd6e641809e515c9fe97e82e8.bindPopup(popup_eb417c3092c74be39b23096ad8f181f6)
+        marker_6bf7c1fbf9c74230b2f9d5dc55287928.bindPopup(popup_74c8655f1e6e415bbf294d6f0df18cd9)
         ;
 
         
     
     
-            marker_36323d9fd6e641809e515c9fe97e82e8.bindTooltip(
+            marker_6bf7c1fbf9c74230b2f9d5dc55287928.bindTooltip(
                 `<div>
                      North Sumatera
                  </div>`,
@@ -825,36 +832,36 @@
             );
         
     
-            var circle_727e84aa215349078ef64628eefd7517 = L.circle(
+            var circle_51526c4d475a4aeea22d2783d1bf6c33 = L.circle(
                 [2.1153547, 99.5450974],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 800, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_2b0ea9b550cc429882a340aee45a4e6c = L.marker(
+            var marker_1ceadfbd954145dd81a06b54f551fd29 = L.marker(
                 [-4.269928, 138.0803529],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_aca4acc7c23049998fc1bf76a77207ed = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Coat_of_Arms_of_Papua.png"});
-        marker_2b0ea9b550cc429882a340aee45a4e6c.setIcon(custom_icon_aca4acc7c23049998fc1bf76a77207ed);
+        var custom_icon_d036e71d386647dd98dcd1ae2a387308 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Coat_of_Arms_of_Papua.png"});
+        marker_1ceadfbd954145dd81a06b54f551fd29.setIcon(custom_icon_d036e71d386647dd98dcd1ae2a387308);
         
     
-        var popup_4205fb1dcd4a41bdadfb04262674a277 = L.popup({"maxWidth": "100%"});
+        var popup_2da56ad740c44f7783407bba6d1d5e70 = L.popup({"maxWidth": "100%"});
 
         
-            var html_71407ae0badd41c1a4dfbdaee596464f = $(`<div id="html_71407ae0badd41c1a4dfbdaee596464f" style="width: 100.0%; height: 100.0%;"><h4><b>Papua</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>7</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_4205fb1dcd4a41bdadfb04262674a277.setContent(html_71407ae0badd41c1a4dfbdaee596464f);
+            var html_32d76668ce0048cdabd395b5c98d0fe2 = $(`<div id="html_32d76668ce0048cdabd395b5c98d0fe2" style="width: 100.0%; height: 100.0%;"><h4><b>Papua</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>9</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_2da56ad740c44f7783407bba6d1d5e70.setContent(html_32d76668ce0048cdabd395b5c98d0fe2);
         
 
-        marker_2b0ea9b550cc429882a340aee45a4e6c.bindPopup(popup_4205fb1dcd4a41bdadfb04262674a277)
+        marker_1ceadfbd954145dd81a06b54f551fd29.bindPopup(popup_2da56ad740c44f7783407bba6d1d5e70)
         ;
 
         
     
     
-            marker_2b0ea9b550cc429882a340aee45a4e6c.bindTooltip(
+            marker_1ceadfbd954145dd81a06b54f551fd29.bindTooltip(
                 `<div>
                      Papua
                  </div>`,
@@ -862,36 +869,36 @@
             );
         
     
-            var circle_965c535e79cf401c822c09294d387bab = L.circle(
+            var circle_a790d8fcfc3b451989dc1422ad95969b = L.circle(
                 [-4.269928, 138.0803529],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 700, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 900, "stroke": true, "weight": 3}
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_0cc0e7857d304625bfd5227e259545e6 = L.marker(
+            var marker_6e1e1fc4d5424eefb814195fbcd54d7b = L.marker(
                 [0.29334689999999997, 101.7068294],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_e8a2f595e63142d8985927353bd8f097 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Coat_of_arms_of_Riau.svg/1200px-Coat_of_arms_of_Riau.svg.png"});
-        marker_0cc0e7857d304625bfd5227e259545e6.setIcon(custom_icon_e8a2f595e63142d8985927353bd8f097);
+        var custom_icon_b892b33e875a4a9b9777177a8b21cc90 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Coat_of_arms_of_Riau.svg/1200px-Coat_of_arms_of_Riau.svg.png"});
+        marker_6e1e1fc4d5424eefb814195fbcd54d7b.setIcon(custom_icon_b892b33e875a4a9b9777177a8b21cc90);
         
     
-        var popup_9fb8751aed154fc6a942d93c03ac02ef = L.popup({"maxWidth": "100%"});
+        var popup_8c5202312b4249f0a720903da3ba2dd2 = L.popup({"maxWidth": "100%"});
 
         
-            var html_5a48dc48cf204d5589089daeee150514 = $(`<div id="html_5a48dc48cf204d5589089daeee150514" style="width: 100.0%; height: 100.0%;"><h4><b>Riau</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_9fb8751aed154fc6a942d93c03ac02ef.setContent(html_5a48dc48cf204d5589089daeee150514);
+            var html_83d93211fe0f46e7b12de0cbb22040b7 = $(`<div id="html_83d93211fe0f46e7b12de0cbb22040b7" style="width: 100.0%; height: 100.0%;"><h4><b>Riau</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_8c5202312b4249f0a720903da3ba2dd2.setContent(html_83d93211fe0f46e7b12de0cbb22040b7);
         
 
-        marker_0cc0e7857d304625bfd5227e259545e6.bindPopup(popup_9fb8751aed154fc6a942d93c03ac02ef)
+        marker_6e1e1fc4d5424eefb814195fbcd54d7b.bindPopup(popup_8c5202312b4249f0a720903da3ba2dd2)
         ;
 
         
     
     
-            marker_0cc0e7857d304625bfd5227e259545e6.bindTooltip(
+            marker_6e1e1fc4d5424eefb814195fbcd54d7b.bindTooltip(
                 `<div>
                      Riau
                  </div>`,
@@ -899,36 +906,36 @@
             );
         
     
-            var circle_41b75fa0516448e7855b4964c1fb9698 = L.circle(
+            var circle_18bec9062b544b2bb3f535b23feff1ba = L.circle(
                 [0.29334689999999997, 101.7068294],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_4b779d7010f94e4891d4722a78eb4e18 = L.marker(
+            var marker_9beae4a0834140e9b6a1e3aff7a5f238 = L.marker(
                 [3.9456514, 108.1428669],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_fabde3827ff246608ac38e052da6e2e5 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Coat_of_arms_of_Riau_Islands.png"});
-        marker_4b779d7010f94e4891d4722a78eb4e18.setIcon(custom_icon_fabde3827ff246608ac38e052da6e2e5);
+        var custom_icon_073370eed36746fea43fd04f68c41707 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Coat_of_arms_of_Riau_Islands.png"});
+        marker_9beae4a0834140e9b6a1e3aff7a5f238.setIcon(custom_icon_073370eed36746fea43fd04f68c41707);
         
     
-        var popup_8c73e99114d7440a9e121c2376a120c0 = L.popup({"maxWidth": "100%"});
+        var popup_6f3f84c304a84bd8a566103ab7003b99 = L.popup({"maxWidth": "100%"});
 
         
-            var html_20dd3a3d0ce740e19a8b4344db950b0e = $(`<div id="html_20dd3a3d0ce740e19a8b4344db950b0e" style="width: 100.0%; height: 100.0%;"><h4><b>Riau Islands</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>5</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>1</b></center></td></tr></table></div>`)[0];
-            popup_8c73e99114d7440a9e121c2376a120c0.setContent(html_20dd3a3d0ce740e19a8b4344db950b0e);
+            var html_3ebb67bb09c648e38523e4f481894cf9 = $(`<div id="html_3ebb67bb09c648e38523e4f481894cf9" style="width: 100.0%; height: 100.0%;"><h4><b>Riau Islands</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>5</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>1</b></center></td></tr></table></div>`)[0];
+            popup_6f3f84c304a84bd8a566103ab7003b99.setContent(html_3ebb67bb09c648e38523e4f481894cf9);
         
 
-        marker_4b779d7010f94e4891d4722a78eb4e18.bindPopup(popup_8c73e99114d7440a9e121c2376a120c0)
+        marker_9beae4a0834140e9b6a1e3aff7a5f238.bindPopup(popup_6f3f84c304a84bd8a566103ab7003b99)
         ;
 
         
     
     
-            marker_4b779d7010f94e4891d4722a78eb4e18.bindTooltip(
+            marker_9beae4a0834140e9b6a1e3aff7a5f238.bindTooltip(
                 `<div>
                      Riau Islands
                  </div>`,
@@ -936,36 +943,36 @@
             );
         
     
-            var circle_00c75c5b5bc14c7f97d98b2e7eae2023 = L.circle(
+            var circle_7e91a5a7b9394990b27ed7077d315ba7 = L.circle(
                 [3.9456514, 108.1428669],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_28a33178974b4eb88e23894915f563f9 = L.marker(
+            var marker_a3a31864f5824cf891b60fb7bc538bec = L.marker(
                 [-3.0926415, 115.2837585],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_8384778738dc4aa6b2fcd2da5ca4b999 = L.icon({"iconSize": 35, "iconUrl": "https://pngimage.net/wp-content/uploads/2018/06/logo-provinsi-kalimantan-selatan-png.png"});
-        marker_28a33178974b4eb88e23894915f563f9.setIcon(custom_icon_8384778738dc4aa6b2fcd2da5ca4b999);
+        var custom_icon_600b727f3fd24bd691faf8ce75bb56f3 = L.icon({"iconSize": 35, "iconUrl": "https://pngimage.net/wp-content/uploads/2018/06/logo-provinsi-kalimantan-selatan-png.png"});
+        marker_a3a31864f5824cf891b60fb7bc538bec.setIcon(custom_icon_600b727f3fd24bd691faf8ce75bb56f3);
         
     
-        var popup_c10a39a4052549c9914c70bb734ff3a1 = L.popup({"maxWidth": "100%"});
+        var popup_224d5bf47700462187505a44a80adaf7 = L.popup({"maxWidth": "100%"});
 
         
-            var html_c6eb4a89b3b7472b861fc0bf50166b60 = $(`<div id="html_c6eb4a89b3b7472b861fc0bf50166b60" style="width: 100.0%; height: 100.0%;"><h4><b>South Kalimantan</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_c10a39a4052549c9914c70bb734ff3a1.setContent(html_c6eb4a89b3b7472b861fc0bf50166b60);
+            var html_02a7ecad2c8d4c6c8f976e1826b3e2fc = $(`<div id="html_02a7ecad2c8d4c6c8f976e1826b3e2fc" style="width: 100.0%; height: 100.0%;"><h4><b>South Kalimantan</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_224d5bf47700462187505a44a80adaf7.setContent(html_02a7ecad2c8d4c6c8f976e1826b3e2fc);
         
 
-        marker_28a33178974b4eb88e23894915f563f9.bindPopup(popup_c10a39a4052549c9914c70bb734ff3a1)
+        marker_a3a31864f5824cf891b60fb7bc538bec.bindPopup(popup_224d5bf47700462187505a44a80adaf7)
         ;
 
         
     
     
-            marker_28a33178974b4eb88e23894915f563f9.bindTooltip(
+            marker_a3a31864f5824cf891b60fb7bc538bec.bindTooltip(
                 `<div>
                      South Kalimantan
                  </div>`,
@@ -973,36 +980,36 @@
             );
         
     
-            var circle_63ee55b0858748629b0033f78974d677 = L.circle(
+            var circle_a483ca4f5c714fa881ffa7c6c2330db8 = L.circle(
                 [-3.0926415, 115.2837585],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_10d72ffff8f84216ab147863b140984d = L.marker(
+            var marker_8791fdf1bf2d49c0a144fa68704f5934 = L.marker(
                 [-3.6687994, 119.9740534],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_d981a8f423bd4c8cb8837f123cf91eca = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Coat_of_arms_of_South_Sulawesi.svg/1200px-Coat_of_arms_of_South_Sulawesi.svg.png"});
-        marker_10d72ffff8f84216ab147863b140984d.setIcon(custom_icon_d981a8f423bd4c8cb8837f123cf91eca);
+        var custom_icon_3b31c108d836442ba1885da277663b13 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Coat_of_arms_of_South_Sulawesi.svg/1200px-Coat_of_arms_of_South_Sulawesi.svg.png"});
+        marker_8791fdf1bf2d49c0a144fa68704f5934.setIcon(custom_icon_3b31c108d836442ba1885da277663b13);
         
     
-        var popup_2cd7cfca78b3443681f00dced570360c = L.popup({"maxWidth": "100%"});
+        var popup_8ff75cbdce644af49984869f8bdcab92 = L.popup({"maxWidth": "100%"});
 
         
-            var html_9c7876000251420eb909798eaddb6fa6 = $(`<div id="html_9c7876000251420eb909798eaddb6fa6" style="width: 100.0%; height: 100.0%;"><h4><b>South Sulawesi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>33</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>1</b></center></td></tr></table></div>`)[0];
-            popup_2cd7cfca78b3443681f00dced570360c.setContent(html_9c7876000251420eb909798eaddb6fa6);
+            var html_8106ffb3d75f4b238378ac6413828062 = $(`<div id="html_8106ffb3d75f4b238378ac6413828062" style="width: 100.0%; height: 100.0%;"><h4><b>South Sulawesi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>47</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>1</b></center></td></tr></table></div>`)[0];
+            popup_8ff75cbdce644af49984869f8bdcab92.setContent(html_8106ffb3d75f4b238378ac6413828062);
         
 
-        marker_10d72ffff8f84216ab147863b140984d.bindPopup(popup_2cd7cfca78b3443681f00dced570360c)
+        marker_8791fdf1bf2d49c0a144fa68704f5934.bindPopup(popup_8ff75cbdce644af49984869f8bdcab92)
         ;
 
         
     
     
-            marker_10d72ffff8f84216ab147863b140984d.bindTooltip(
+            marker_8791fdf1bf2d49c0a144fa68704f5934.bindTooltip(
                 `<div>
                      South Sulawesi
                  </div>`,
@@ -1010,36 +1017,36 @@
             );
         
     
-            var circle_e72aa796728246d4ba9b1e4d8a98f406 = L.circle(
+            var circle_79d7610f5ac54c99aedaf4f7d7fc8b63 = L.circle(
                 [-3.6687994, 119.9740534],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3300, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4700, "stroke": true, "weight": 3}
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_9043de58dc864142a02f5b902a80cec0 = L.marker(
+            var marker_78d8f4e235e443ac99528625d0e3b362 = L.marker(
                 [-4.14491, 122.174605],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_e8951747fcbe42a08b2932bf6a6f9fbd = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Coat_of_arms_of_Southeast_Sulawesi.svg/1200px-Coat_of_arms_of_Southeast_Sulawesi.svg.png"});
-        marker_9043de58dc864142a02f5b902a80cec0.setIcon(custom_icon_e8951747fcbe42a08b2932bf6a6f9fbd);
+        var custom_icon_2f55860ad2d54696afe0769c48917b14 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Coat_of_arms_of_Southeast_Sulawesi.svg/1200px-Coat_of_arms_of_Southeast_Sulawesi.svg.png"});
+        marker_78d8f4e235e443ac99528625d0e3b362.setIcon(custom_icon_2f55860ad2d54696afe0769c48917b14);
         
     
-        var popup_de4ff9be7e0e4f72acf2d8d71817ee39 = L.popup({"maxWidth": "100%"});
+        var popup_2c062dfe6d1c403cb9efbf6b2424fda9 = L.popup({"maxWidth": "100%"});
 
         
-            var html_b3efbc25a4ba4d6382e58d1763e658e5 = $(`<div id="html_b3efbc25a4ba4d6382e58d1763e658e5" style="width: 100.0%; height: 100.0%;"><h4><b>Southeast Sulawesi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>3</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_de4ff9be7e0e4f72acf2d8d71817ee39.setContent(html_b3efbc25a4ba4d6382e58d1763e658e5);
+            var html_62234851b4d1410a9abfbb168f816d23 = $(`<div id="html_62234851b4d1410a9abfbb168f816d23" style="width: 100.0%; height: 100.0%;"><h4><b>Southeast Sulawesi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>3</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_2c062dfe6d1c403cb9efbf6b2424fda9.setContent(html_62234851b4d1410a9abfbb168f816d23);
         
 
-        marker_9043de58dc864142a02f5b902a80cec0.bindPopup(popup_de4ff9be7e0e4f72acf2d8d71817ee39)
+        marker_78d8f4e235e443ac99528625d0e3b362.bindPopup(popup_2c062dfe6d1c403cb9efbf6b2424fda9)
         ;
 
         
     
     
-            marker_9043de58dc864142a02f5b902a80cec0.bindTooltip(
+            marker_78d8f4e235e443ac99528625d0e3b362.bindTooltip(
                 `<div>
                      Southeast Sulawesi
                  </div>`,
@@ -1047,36 +1054,36 @@
             );
         
     
-            var circle_93d656db37b3400fa3a7009c0cfb05a9 = L.circle(
+            var circle_4d7a830a523f4dbab6478f952f4ef8e1 = L.circle(
                 [-4.14491, 122.174605],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_1bf87a5b1f864976986010a91f3f2b4f = L.marker(
+            var marker_05c16bd8d7fe45a59f1c28a46cd65c26 = L.marker(
                 [-3.3194374, 103.914399],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_a42c51ee96d8482eb0f3ff2db7227113 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Coat_of_arms_of_South_Sumatra.svg/1200px-Coat_of_arms_of_South_Sumatra.svg.png"});
-        marker_1bf87a5b1f864976986010a91f3f2b4f.setIcon(custom_icon_a42c51ee96d8482eb0f3ff2db7227113);
+        var custom_icon_80cf23bdd132428ca1b98d1123cc8c5d = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Coat_of_arms_of_South_Sumatra.svg/1200px-Coat_of_arms_of_South_Sumatra.svg.png"});
+        marker_05c16bd8d7fe45a59f1c28a46cd65c26.setIcon(custom_icon_80cf23bdd132428ca1b98d1123cc8c5d);
         
     
-        var popup_13e795b4974e4106b325d8e6cfa4bdf5 = L.popup({"maxWidth": "100%"});
+        var popup_da23ffe4af8145588cfe306325cabd07 = L.popup({"maxWidth": "100%"});
 
         
-            var html_c4e8985b492d4bec995661a923c65461 = $(`<div id="html_c4e8985b492d4bec995661a923c65461" style="width: 100.0%; height: 100.0%;"><h4><b>South Sumatera</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>1</b></center></td></tr></table></div>`)[0];
-            popup_13e795b4974e4106b325d8e6cfa4bdf5.setContent(html_c4e8985b492d4bec995661a923c65461);
+            var html_ebdd84f6744145019bfa8805c974d727 = $(`<div id="html_ebdd84f6744145019bfa8805c974d727" style="width: 100.0%; height: 100.0%;"><h4><b>South Sumatera</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_da23ffe4af8145588cfe306325cabd07.setContent(html_ebdd84f6744145019bfa8805c974d727);
         
 
-        marker_1bf87a5b1f864976986010a91f3f2b4f.bindPopup(popup_13e795b4974e4106b325d8e6cfa4bdf5)
+        marker_05c16bd8d7fe45a59f1c28a46cd65c26.bindPopup(popup_da23ffe4af8145588cfe306325cabd07)
         ;
 
         
     
     
-            marker_1bf87a5b1f864976986010a91f3f2b4f.bindTooltip(
+            marker_05c16bd8d7fe45a59f1c28a46cd65c26.bindTooltip(
                 `<div>
                      South Sumatera
                  </div>`,
@@ -1084,36 +1091,36 @@
             );
         
     
-            var circle_36ffd9b969fc4921b0df4baebcc33bca = L.circle(
+            var circle_6bc7bd1943af4abcb4f318bba21852f9 = L.circle(
                 [-3.3194374, 103.914399],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_2288f5d838d543caaa30da21ea81d3c7 = L.marker(
+            var marker_d7399b85a8d54c44aa07f15783799bf9 = L.marker(
                 [-7.090911, 107.668887],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_b2e8086c2e1b4056886dc771ac96256a = L.icon({"iconSize": 35, "iconUrl": "https://3.bp.blogspot.com/-BRV8kAVyi4I/XDX3S86Pk5I/AAAAAAAABwA/K5fnfc4c1VYps0EcV32qP6yB96kghqU3QCLcBGAs/s1600/logo%2Bjawa%2Bbarat.png"});
-        marker_2288f5d838d543caaa30da21ea81d3c7.setIcon(custom_icon_b2e8086c2e1b4056886dc771ac96256a);
+        var custom_icon_3c6c0221deb8415d8af76bf07224b8b6 = L.icon({"iconSize": 35, "iconUrl": "https://3.bp.blogspot.com/-BRV8kAVyi4I/XDX3S86Pk5I/AAAAAAAABwA/K5fnfc4c1VYps0EcV32qP6yB96kghqU3QCLcBGAs/s1600/logo%2Bjawa%2Bbarat.png"});
+        marker_d7399b85a8d54c44aa07f15783799bf9.setIcon(custom_icon_3c6c0221deb8415d8af76bf07224b8b6);
         
     
-        var popup_6ce84efe397f45eaa66ee58220ada7cd = L.popup({"maxWidth": "100%"});
+        var popup_9b2a95636fca4c9eb700bb227bf132d5 = L.popup({"maxWidth": "100%"});
 
         
-            var html_ce6c861a81954b499b4dd2666b068e59 = $(`<div id="html_ce6c861a81954b499b4dd2666b068e59" style="width: 100.0%; height: 100.0%;"><h4><b>West Java</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>119</b></center></td><td><center><b style='color:green'>6</b></center></td><td><center><b>17</b></center></td></tr></table></div>`)[0];
-            popup_6ce84efe397f45eaa66ee58220ada7cd.setContent(html_ce6c861a81954b499b4dd2666b068e59);
+            var html_c0ff59ac58e5418a950c2ebbeaf4b12e = $(`<div id="html_c0ff59ac58e5418a950c2ebbeaf4b12e" style="width: 100.0%; height: 100.0%;"><h4><b>West Java</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>149</b></center></td><td><center><b style='color:green'>6</b></center></td><td><center><b>19</b></center></td></tr></table></div>`)[0];
+            popup_9b2a95636fca4c9eb700bb227bf132d5.setContent(html_c0ff59ac58e5418a950c2ebbeaf4b12e);
         
 
-        marker_2288f5d838d543caaa30da21ea81d3c7.bindPopup(popup_6ce84efe397f45eaa66ee58220ada7cd)
+        marker_d7399b85a8d54c44aa07f15783799bf9.bindPopup(popup_9b2a95636fca4c9eb700bb227bf132d5)
         ;
 
         
     
     
-            marker_2288f5d838d543caaa30da21ea81d3c7.bindTooltip(
+            marker_d7399b85a8d54c44aa07f15783799bf9.bindTooltip(
                 `<div>
                      West Java
                  </div>`,
@@ -1121,36 +1128,36 @@
             );
         
     
-            var circle_21cca7ff6ffb467a8bc2da6361c17c86 = L.circle(
+            var circle_8a0d36360dae4bd9867565dd91062f65 = L.circle(
                 [-7.090911, 107.668887],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11900, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14900, "stroke": true, "weight": 3}
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_b23a7ff2464541a68216112b443c35a1 = L.marker(
+            var marker_a3615f781d8a49e6916a2c7c0e2db4a8 = L.marker(
                 [-0.2787808, 111.4752851],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_a89f66159c3b4d36a6a9db00f8d03acb = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Coat_of_arms_of_West_Kalimantan.svg/1200px-Coat_of_arms_of_West_Kalimantan.svg.png"});
-        marker_b23a7ff2464541a68216112b443c35a1.setIcon(custom_icon_a89f66159c3b4d36a6a9db00f8d03acb);
+        var custom_icon_caf7719b0f5a4bed956d6e42e6464eba = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Coat_of_arms_of_West_Kalimantan.svg/1200px-Coat_of_arms_of_West_Kalimantan.svg.png"});
+        marker_a3615f781d8a49e6916a2c7c0e2db4a8.setIcon(custom_icon_caf7719b0f5a4bed956d6e42e6464eba);
         
     
-        var popup_28171ef157d541d680fe375b3ca8c85a = L.popup({"maxWidth": "100%"});
+        var popup_2c7bf79395d74ad085fa25d09a45ff7c = L.popup({"maxWidth": "100%"});
 
         
-            var html_76e1761299594d78b25e2c768482aa4d = $(`<div id="html_76e1761299594d78b25e2c768482aa4d" style="width: 100.0%; height: 100.0%;"><h4><b>West Kalimantan</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>3</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_28171ef157d541d680fe375b3ca8c85a.setContent(html_76e1761299594d78b25e2c768482aa4d);
+            var html_6560ecd4ae3e484ea071745ad1a35ee6 = $(`<div id="html_6560ecd4ae3e484ea071745ad1a35ee6" style="width: 100.0%; height: 100.0%;"><h4><b>West Kalimantan</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>8</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_2c7bf79395d74ad085fa25d09a45ff7c.setContent(html_6560ecd4ae3e484ea071745ad1a35ee6);
         
 
-        marker_b23a7ff2464541a68216112b443c35a1.bindPopup(popup_28171ef157d541d680fe375b3ca8c85a)
+        marker_a3615f781d8a49e6916a2c7c0e2db4a8.bindPopup(popup_2c7bf79395d74ad085fa25d09a45ff7c)
         ;
 
         
     
     
-            marker_b23a7ff2464541a68216112b443c35a1.bindTooltip(
+            marker_a3615f781d8a49e6916a2c7c0e2db4a8.bindTooltip(
                 `<div>
                      West Kalimantan
                  </div>`,
@@ -1158,36 +1165,36 @@
             );
         
     
-            var circle_8681ce52f3324c10b7e9323d86b75488 = L.circle(
+            var circle_63f19d779e6a4e94a7c7a5bf4a78aaa9 = L.circle(
                 [-0.2787808, 111.4752851],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 800, "stroke": true, "weight": 3}
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_29e1a97dd8b74285b05ff5f1cf203e3c = L.marker(
+            var marker_099caddfa2624c35b7a37a2229a51c12 = L.marker(
                 [-8.6529334, 117.3616476],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_ba8e73c1cb0e49399563f4ae010e92dc = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Coat_of_arms_of_West_Nusa_Tenggara.svg/1200px-Coat_of_arms_of_West_Nusa_Tenggara.svg.png"});
-        marker_29e1a97dd8b74285b05ff5f1cf203e3c.setIcon(custom_icon_ba8e73c1cb0e49399563f4ae010e92dc);
+        var custom_icon_307354b773434f6a8b683e4157393b18 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Coat_of_arms_of_West_Nusa_Tenggara.svg/1200px-Coat_of_arms_of_West_Nusa_Tenggara.svg.png"});
+        marker_099caddfa2624c35b7a37a2229a51c12.setIcon(custom_icon_307354b773434f6a8b683e4157393b18);
         
     
-        var popup_f6d1b78df38948e995b335c372ccd5a5 = L.popup({"maxWidth": "100%"});
+        var popup_e2b5c7b47caa480889047206daf4e653 = L.popup({"maxWidth": "100%"});
 
         
-            var html_b050c12a9be34716bff79f5704107a1c = $(`<div id="html_b050c12a9be34716bff79f5704107a1c" style="width: 100.0%; height: 100.0%;"><h4><b>West Nusa Tenggara</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_f6d1b78df38948e995b335c372ccd5a5.setContent(html_b050c12a9be34716bff79f5704107a1c);
+            var html_b4795d081470470caab8775476adfdb9 = $(`<div id="html_b4795d081470470caab8775476adfdb9" style="width: 100.0%; height: 100.0%;"><h4><b>West Nusa Tenggara</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_e2b5c7b47caa480889047206daf4e653.setContent(html_b4795d081470470caab8775476adfdb9);
         
 
-        marker_29e1a97dd8b74285b05ff5f1cf203e3c.bindPopup(popup_f6d1b78df38948e995b335c372ccd5a5)
+        marker_099caddfa2624c35b7a37a2229a51c12.bindPopup(popup_e2b5c7b47caa480889047206daf4e653)
         ;
 
         
     
     
-            marker_29e1a97dd8b74285b05ff5f1cf203e3c.bindTooltip(
+            marker_099caddfa2624c35b7a37a2229a51c12.bindTooltip(
                 `<div>
                      West Nusa Tenggara
                  </div>`,
@@ -1195,36 +1202,36 @@
             );
         
     
-            var circle_405d36cb617f4fc58d789e4fb7f8ab75 = L.circle(
+            var circle_3a268721358e40eeb0b70a513a3379e0 = L.circle(
                 [-8.6529334, 117.3616476],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_eb09c19ca40e480c8521b4b3374c7603 = L.marker(
+            var marker_da381b00de10401c90d3eed9570f6f4b = L.marker(
                 [-1.3361154, 133.1747162],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_e4c6513dc37247c8a786b8e679110df0 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Coat_of_arms_of_West_Papua.svg/1200px-Coat_of_arms_of_West_Papua.svg.png"});
-        marker_eb09c19ca40e480c8521b4b3374c7603.setIcon(custom_icon_e4c6513dc37247c8a786b8e679110df0);
+        var custom_icon_d8fad2b00bcb4518a5fdc455b246b66a = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Coat_of_arms_of_West_Papua.svg/1200px-Coat_of_arms_of_West_Papua.svg.png"});
+        marker_da381b00de10401c90d3eed9570f6f4b.setIcon(custom_icon_d8fad2b00bcb4518a5fdc455b246b66a);
         
     
-        var popup_17c7b85b364b48cea1a7d1ad3a4f0c8d = L.popup({"maxWidth": "100%"});
+        var popup_c031ff81ef274f70a7cee41bb40c55a3 = L.popup({"maxWidth": "100%"});
 
         
-            var html_0f534c5bcd8940b0bfbf086a4d340806 = $(`<div id="html_0f534c5bcd8940b0bfbf086a4d340806" style="width: 100.0%; height: 100.0%;"><h4><b>West Papua</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_17c7b85b364b48cea1a7d1ad3a4f0c8d.setContent(html_0f534c5bcd8940b0bfbf086a4d340806);
+            var html_259dfba62266413e9793f01b34504aa5 = $(`<div id="html_259dfba62266413e9793f01b34504aa5" style="width: 100.0%; height: 100.0%;"><h4><b>West Papua</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_c031ff81ef274f70a7cee41bb40c55a3.setContent(html_259dfba62266413e9793f01b34504aa5);
         
 
-        marker_eb09c19ca40e480c8521b4b3374c7603.bindPopup(popup_17c7b85b364b48cea1a7d1ad3a4f0c8d)
+        marker_da381b00de10401c90d3eed9570f6f4b.bindPopup(popup_c031ff81ef274f70a7cee41bb40c55a3)
         ;
 
         
     
     
-            marker_eb09c19ca40e480c8521b4b3374c7603.bindTooltip(
+            marker_da381b00de10401c90d3eed9570f6f4b.bindTooltip(
                 `<div>
                      West Papua
                  </div>`,
@@ -1232,36 +1239,36 @@
             );
         
     
-            var circle_c88ab845c3cd4cd6aaa2862eb955b873 = L.circle(
+            var circle_aca5d0261cbe43a7b43247db51361ef2 = L.circle(
                 [-1.3361154, 133.1747162],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_7997a0704f42477e9d9392edc2085fff = L.marker(
+            var marker_7ff38cdd20ab4cd4a2b0a2862f92c1c8 = L.marker(
                 [-2.8441371, 119.2320784],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_864334af2cb243b4ae8efcf02ffa996e = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Coat_of_arms_of_West_Sulawesi.png"});
-        marker_7997a0704f42477e9d9392edc2085fff.setIcon(custom_icon_864334af2cb243b4ae8efcf02ffa996e);
+        var custom_icon_345093c4f31c453faacd025289a10cfd = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Coat_of_arms_of_West_Sulawesi.png"});
+        marker_7ff38cdd20ab4cd4a2b0a2862f92c1c8.setIcon(custom_icon_345093c4f31c453faacd025289a10cfd);
         
     
-        var popup_8950e2da451948c1a2239e17f1e9069a = L.popup({"maxWidth": "100%"});
+        var popup_4b18955ab4e04bfabc747266831a7fc7 = L.popup({"maxWidth": "100%"});
 
         
-            var html_42147b8aed774303af0e7e07d79951b8 = $(`<div id="html_42147b8aed774303af0e7e07d79951b8" style="width: 100.0%; height: 100.0%;"><h4><b>West Sulawesi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>0</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_8950e2da451948c1a2239e17f1e9069a.setContent(html_42147b8aed774303af0e7e07d79951b8);
+            var html_723da2a718634379a7fc643e8a027ad2 = $(`<div id="html_723da2a718634379a7fc643e8a027ad2" style="width: 100.0%; height: 100.0%;"><h4><b>West Sulawesi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_4b18955ab4e04bfabc747266831a7fc7.setContent(html_723da2a718634379a7fc643e8a027ad2);
         
 
-        marker_7997a0704f42477e9d9392edc2085fff.bindPopup(popup_8950e2da451948c1a2239e17f1e9069a)
+        marker_7ff38cdd20ab4cd4a2b0a2862f92c1c8.bindPopup(popup_4b18955ab4e04bfabc747266831a7fc7)
         ;
 
         
     
     
-            marker_7997a0704f42477e9d9392edc2085fff.bindTooltip(
+            marker_7ff38cdd20ab4cd4a2b0a2862f92c1c8.bindTooltip(
                 `<div>
                      West Sulawesi
                  </div>`,
@@ -1269,36 +1276,36 @@
             );
         
     
-            var circle_87eafb2b2e44405ab28a82a6ef420d94 = L.circle(
+            var circle_3c371b28018c4574a6c4193c61b24b5e = L.circle(
                 [-2.8441371, 119.2320784],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_7ab8fe6db82944aa8890dcf30bf88568 = L.marker(
+            var marker_53cfd1e5ff6544aeab47b2ad57140aa2 = L.marker(
                 [-0.7399397, 100.80000509999999],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_14c4212455f84e21bc469c8358ca96d8 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Coat_of_arms_of_West_Sumatra.svg/1200px-Coat_of_arms_of_West_Sumatra.svg.png"});
-        marker_7ab8fe6db82944aa8890dcf30bf88568.setIcon(custom_icon_14c4212455f84e21bc469c8358ca96d8);
+        var custom_icon_6a254f44b7a74d42b9e1838cc35b7f27 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Coat_of_arms_of_West_Sumatra.svg/1200px-Coat_of_arms_of_West_Sumatra.svg.png"});
+        marker_53cfd1e5ff6544aeab47b2ad57140aa2.setIcon(custom_icon_6a254f44b7a74d42b9e1838cc35b7f27);
         
     
-        var popup_3add4e2b8bd24eae83fc7329e18b9c84 = L.popup({"maxWidth": "100%"});
+        var popup_3fdd3b9f951c474289c331a74ab0585f = L.popup({"maxWidth": "100%"});
 
         
-            var html_59521c4890614f7bb34e7159e4191908 = $(`<div id="html_59521c4890614f7bb34e7159e4191908" style="width: 100.0%; height: 100.0%;"><h4><b>West Sumatra</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>5</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
-            popup_3add4e2b8bd24eae83fc7329e18b9c84.setContent(html_59521c4890614f7bb34e7159e4191908);
+            var html_2dd4ae05cbdd4bfb96307724c9aa95be = $(`<div id="html_2dd4ae05cbdd4bfb96307724c9aa95be" style="width: 100.0%; height: 100.0%;"><h4><b>West Sumatra</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>5</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_3fdd3b9f951c474289c331a74ab0585f.setContent(html_2dd4ae05cbdd4bfb96307724c9aa95be);
         
 
-        marker_7ab8fe6db82944aa8890dcf30bf88568.bindPopup(popup_3add4e2b8bd24eae83fc7329e18b9c84)
+        marker_53cfd1e5ff6544aeab47b2ad57140aa2.bindPopup(popup_3fdd3b9f951c474289c331a74ab0585f)
         ;
 
         
     
     
-            marker_7ab8fe6db82944aa8890dcf30bf88568.bindTooltip(
+            marker_53cfd1e5ff6544aeab47b2ad57140aa2.bindTooltip(
                 `<div>
                      West Sumatra
                  </div>`,
@@ -1306,36 +1313,36 @@
             );
         
     
-            var circle_6a2cade3cd944be096a64ce8bece0be6 = L.circle(
+            var circle_ea346ea78884447aaf9c3822dad5327f = L.circle(
                 [-0.7399397, 100.80000509999999],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-            var marker_f6c9525a52ab47babcb906b2e5d188fa = L.marker(
+            var marker_70f7a41706494647ad255e23797f0fdb = L.marker(
                 [-7.8753849, 110.4262088],
                 {}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
     
-        var custom_icon_b1add74c6a5e40aa992764a966e663db = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Coat_of_arms_of_Yogyakarta.svg/1200px-Coat_of_arms_of_Yogyakarta.svg.png"});
-        marker_f6c9525a52ab47babcb906b2e5d188fa.setIcon(custom_icon_b1add74c6a5e40aa992764a966e663db);
+        var custom_icon_080a58e7f5574c4b850c3056362d303d = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Coat_of_arms_of_Yogyakarta.svg/1200px-Coat_of_arms_of_Yogyakarta.svg.png"});
+        marker_70f7a41706494647ad255e23797f0fdb.setIcon(custom_icon_080a58e7f5574c4b850c3056362d303d);
         
     
-        var popup_a2b2e1fe5571400a93d4912fb877183b = L.popup({"maxWidth": "100%"});
+        var popup_a75e28c131f34118ad2f452dbc7679db = L.popup({"maxWidth": "100%"});
 
         
-            var html_19af3a029e1b468982cd508db34d10c0 = $(`<div id="html_19af3a029e1b468982cd508db34d10c0" style="width: 100.0%; height: 100.0%;"><h4><b>Yogyakarta</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>22</b></center></td><td><center><b style='color:green'>1</b></center></td><td><center><b>2</b></center></td></tr></table></div>`)[0];
-            popup_a2b2e1fe5571400a93d4912fb877183b.setContent(html_19af3a029e1b468982cd508db34d10c0);
+            var html_4facdccafec747fc9157a78b386b0922 = $(`<div id="html_4facdccafec747fc9157a78b386b0922" style="width: 100.0%; height: 100.0%;"><h4><b>Yogyakarta</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>22</b></center></td><td><center><b style='color:green'>1</b></center></td><td><center><b>2</b></center></td></tr></table></div>`)[0];
+            popup_a75e28c131f34118ad2f452dbc7679db.setContent(html_4facdccafec747fc9157a78b386b0922);
         
 
-        marker_f6c9525a52ab47babcb906b2e5d188fa.bindPopup(popup_a2b2e1fe5571400a93d4912fb877183b)
+        marker_70f7a41706494647ad255e23797f0fdb.bindPopup(popup_a75e28c131f34118ad2f452dbc7679db)
         ;
 
         
     
     
-            marker_f6c9525a52ab47babcb906b2e5d188fa.bindTooltip(
+            marker_70f7a41706494647ad255e23797f0fdb.bindTooltip(
                 `<div>
                      Yogyakarta
                  </div>`,
@@ -1343,9 +1350,9 @@
             );
         
     
-            var circle_bea3c10087ee4e4a9cd869df91595a4d = L.circle(
+            var circle_fb087f2b7fef4b9580914b9d492f6ca3 = L.circle(
                 [-7.8753849, 110.4262088],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2200, "stroke": true, "weight": 3}
-            ).addTo(map_0a64a2bc776c4875949f2e4a157c8622);
+            ).addTo(map_50fd52c4f6fb4c6eb8010fb655dca7c9);
         
 </script>
