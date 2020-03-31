@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_861df3e9859040a79aedcf738c3dca5a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    
+        <style>
+            #float_image_70c980e7443347ad9ad00ddbd1c369ee {
+                position:absolute;
+                top:20px;
+                right:20px;
+            }
+            #float_image_61f6e7e70b464b0a93a21094405dee22 {
+                position:absolute;
+                bottom:20px;
+                right:20px;
+            }
+            @media screen and (max-width: 900px){
+                #float_image_70c980e7443347ad9ad00ddbd1c369ee {
+                    height: 57px;
+                    width: 160px;
+                }
+                #float_image_61f6e7e70b464b0a93a21094405dee22 {
+                    height: 43px;
+                    width: 149px;
+                }
+            }
+            
+        </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_861df3e9859040a79aedcf738c3dca5a" ></div>
+        
+    
+            <img id="float_image_70c980e7443347ad9ad00ddbd1c369ee" alt="float_image"
+                 src="https://raw.githubusercontent.com/LintangWisesa/Indonesia-Covid19-Maps/master/img/indonesiaupdate.png"
+                 style="z-index: 999999">
+            </img>
+            
+    
+            <img id="float_image_61f6e7e70b464b0a93a21094405dee22" alt="float_image"
+                 src="https://raw.githubusercontent.com/LintangWisesa/Indonesia-Covid19-Maps/master/img/simplinnovation.png"
+                 style="z-index: 999999">
+            </img>
+            
+</body>
+<script>    
+    
+            var map_861df3e9859040a79aedcf738c3dca5a = L.map(
+                "map_861df3e9859040a79aedcf738c3dca5a",
+                {
+                    center: [-0.5273, 118.6963],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6169823b27bb420b8614096bb2574bfb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_f289d3c49b274d2f9db0c57eaad49227 = L.marker(
+                [4.695135, 96.7493993],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_c8d0c7d4d31847e6af6b1765962076d3 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Coat_of_arms_of_Aceh.svg/1200px-Coat_of_arms_of_Aceh.svg.png"});
+        marker_f289d3c49b274d2f9db0c57eaad49227.setIcon(custom_icon_c8d0c7d4d31847e6af6b1765962076d3);
+        
+    
+        var popup_48128fb234844158b5796e7f87cfad01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c83ac959f554204ad61e07f192c7d4b = $(`<div id="html_6c83ac959f554204ad61e07f192c7d4b" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Aceh</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>5</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_48128fb234844158b5796e7f87cfad01.setContent(html_6c83ac959f554204ad61e07f192c7d4b);
+        
+
+        marker_f289d3c49b274d2f9db0c57eaad49227.bindPopup(popup_48128fb234844158b5796e7f87cfad01)
+        ;
+
+        
+    
+    
+            marker_f289d3c49b274d2f9db0c57eaad49227.bindTooltip(
+                `<div>
+                     Aceh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4eafa66b01a04a0499baa7516a492687 = L.circle(
+                [4.695135, 96.7493993],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_6edf9ba40ba643c79b80b41fc5123442 = L.marker(
+                [-8.4095178, 115.188916],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_67e1a415556747cb8ab3f1005ed4ff8a = L.icon({"iconSize": 35, "iconUrl": "https://4.bp.blogspot.com/-ELlrLdH0frM/WSz4AjqIWaI/AAAAAAAAASY/EF5ayA5zXn05TXw53cRUVTJeh6lzUJDDwCLcB/s400/Lambang%2BDaerah%2BProvinsi%2BBali%2B2.png"});
+        marker_6edf9ba40ba643c79b80b41fc5123442.setIcon(custom_icon_67e1a415556747cb8ab3f1005ed4ff8a);
+        
+    
+        var popup_3b098e91ee1444b898060e39c28f2b2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62cdc54d59744b36a2f5ad6d7a7c9852 = $(`<div id="html_62cdc54d59744b36a2f5ad6d7a7c9852" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Bali</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>19</b></center></td><td><center><b style='color:green'>2</b></center></td><td><center><b>2</b></center></td></tr></table></div>`)[0];
+            popup_3b098e91ee1444b898060e39c28f2b2d.setContent(html_62cdc54d59744b36a2f5ad6d7a7c9852);
+        
+
+        marker_6edf9ba40ba643c79b80b41fc5123442.bindPopup(popup_3b098e91ee1444b898060e39c28f2b2d)
+        ;
+
+        
+    
+    
+            marker_6edf9ba40ba643c79b80b41fc5123442.bindTooltip(
+                `<div>
+                     Bali
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9eda8b0ddf424324a009795df952e118 = L.circle(
+                [-8.4095178, 115.188916],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1900, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_6d6aef5f56054af99e20411b79144543 = L.marker(
+                [-2.7410513, 106.4405872],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_7ac507f2fabb4b91a8b4d1551507c99a = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Coat_of_arms_of_Bangka_Belitung_Islands.svg/1200px-Coat_of_arms_of_Bangka_Belitung_Islands.svg.png"});
+        marker_6d6aef5f56054af99e20411b79144543.setIcon(custom_icon_7ac507f2fabb4b91a8b4d1551507c99a);
+        
+    
+        var popup_ca75bef029214ead8a2e5c3d2c7b3e7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c397ee5d2f9e453e8d05a4f876c06c21 = $(`<div id="html_c397ee5d2f9e453e8d05a4f876c06c21" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Bangka Belitung</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_ca75bef029214ead8a2e5c3d2c7b3e7f.setContent(html_c397ee5d2f9e453e8d05a4f876c06c21);
+        
+
+        marker_6d6aef5f56054af99e20411b79144543.bindPopup(popup_ca75bef029214ead8a2e5c3d2c7b3e7f)
+        ;
+
+        
+    
+    
+            marker_6d6aef5f56054af99e20411b79144543.bindTooltip(
+                `<div>
+                     Bangka Belitung
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6f4858dfdd2045429621405d09ca238b = L.circle(
+                [-2.7410513, 106.4405872],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_5051b48812244d4eb44ed6395ff3a90f = L.marker(
+                [-6.4058171999999995, 106.0640179],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_6b497807112b4b368119a442142042fc = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Coat_of_arms_of_Banten.png"});
+        marker_5051b48812244d4eb44ed6395ff3a90f.setIcon(custom_icon_6b497807112b4b368119a442142042fc);
+        
+    
+        var popup_47bc0445f7064b2884c9caaf0c4c8d52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a81eafd9f2a04db0b25c75968bc5e4eb = $(`<div id="html_a81eafd9f2a04db0b25c75968bc5e4eb" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Banten</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>128</b></center></td><td><center><b style='color:green'>1</b></center></td><td><center><b>4</b></center></td></tr></table></div>`)[0];
+            popup_47bc0445f7064b2884c9caaf0c4c8d52.setContent(html_a81eafd9f2a04db0b25c75968bc5e4eb);
+        
+
+        marker_5051b48812244d4eb44ed6395ff3a90f.bindPopup(popup_47bc0445f7064b2884c9caaf0c4c8d52)
+        ;
+
+        
+    
+    
+            marker_5051b48812244d4eb44ed6395ff3a90f.bindTooltip(
+                `<div>
+                     Banten
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e7e65e6ae4664b4fbdee9634670a1e25 = L.circle(
+                [-6.4058171999999995, 106.0640179],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12800, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_f1747fa1c05740c4bc5ae8496892cf99 = L.marker(
+                [-3.5778471, 102.3463875],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_190f4f1635004bd9b61817d73fcb3349 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Coat_of_arms_of_Bengkulu.png"});
+        marker_f1747fa1c05740c4bc5ae8496892cf99.setIcon(custom_icon_190f4f1635004bd9b61817d73fcb3349);
+        
+    
+        var popup_1e14ce05c15b47339c94710b385041a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d36588c8265e465598d016660abefd6a = $(`<div id="html_d36588c8265e465598d016660abefd6a" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Bengkulu</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>0</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_1e14ce05c15b47339c94710b385041a5.setContent(html_d36588c8265e465598d016660abefd6a);
+        
+
+        marker_f1747fa1c05740c4bc5ae8496892cf99.bindPopup(popup_1e14ce05c15b47339c94710b385041a5)
+        ;
+
+        
+    
+    
+            marker_f1747fa1c05740c4bc5ae8496892cf99.bindTooltip(
+                `<div>
+                     Bengkulu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3735b8f94689477fb8ae9c9e8440e4ba = L.circle(
+                [-3.5778471, 102.3463875],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_26496c0107b344969354878936367b4c = L.marker(
+                [-7.150975, 110.1402594],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_5548e87c531f4f0e8ca233ef93d59567 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Jawa_Tengah_Logo.svg/526px-Jawa_Tengah_Logo.svg.png"});
+        marker_26496c0107b344969354878936367b4c.setIcon(custom_icon_5548e87c531f4f0e8ca233ef93d59567);
+        
+    
+        var popup_d5dcdc3e4e4945139606a332698c30f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b8fd5b7f5554aa09f3a24e30be63f37 = $(`<div id="html_2b8fd5b7f5554aa09f3a24e30be63f37" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Central Java</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>81</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>7</b></center></td></tr></table></div>`)[0];
+            popup_d5dcdc3e4e4945139606a332698c30f4.setContent(html_2b8fd5b7f5554aa09f3a24e30be63f37);
+        
+
+        marker_26496c0107b344969354878936367b4c.bindPopup(popup_d5dcdc3e4e4945139606a332698c30f4)
+        ;
+
+        
+    
+    
+            marker_26496c0107b344969354878936367b4c.bindTooltip(
+                `<div>
+                     Central Java
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3e7b5cd8a9cc49fab317cf816a48a6b4 = L.circle(
+                [-7.150975, 110.1402594],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8100, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_2a6ed08abccc44c398436a1498c29ad7 = L.marker(
+                [-1.6814878, 113.3823545],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_6d595af784e145a496f9aeed54786c6d = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Coat_of_arms_of_Central_Kalimantan.png"});
+        marker_2a6ed08abccc44c398436a1498c29ad7.setIcon(custom_icon_6d595af784e145a496f9aeed54786c6d);
+        
+    
+        var popup_dac9fb5660dd4a00b1be18795294d218 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd44278c83294ae8acca700e9a2a05ae = $(`<div id="html_bd44278c83294ae8acca700e9a2a05ae" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Central Kalimantan</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>7</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_dac9fb5660dd4a00b1be18795294d218.setContent(html_bd44278c83294ae8acca700e9a2a05ae);
+        
+
+        marker_2a6ed08abccc44c398436a1498c29ad7.bindPopup(popup_dac9fb5660dd4a00b1be18795294d218)
+        ;
+
+        
+    
+    
+            marker_2a6ed08abccc44c398436a1498c29ad7.bindTooltip(
+                `<div>
+                     Central Kalimantan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bf4205825e6c4d508c6386792bd7e3a9 = L.circle(
+                [-1.6814878, 113.3823545],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 700, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_3c6529cb7ad1400daeb24ed07869a6c4 = L.marker(
+                [-1.4300254, 121.4456179],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_9674aec01ef1413586876662321d35a4 = L.icon({"iconSize": 35, "iconUrl": "http://1.bp.blogspot.com/-Mb3OPbim3Gw/VrYYo_59GjI/AAAAAAAAVFw/oh24hNmZ1NU/s1600/LOGO%2BSULAWESI%2BTENGAH.png"});
+        marker_3c6529cb7ad1400daeb24ed07869a6c4.setIcon(custom_icon_9674aec01ef1413586876662321d35a4);
+        
+    
+        var popup_2619e90ef4164dacbb9d9724dedd7f38 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcc21ea05a58400d93fe7614a002ade0 = $(`<div id="html_dcc21ea05a58400d93fe7614a002ade0" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Central Sulawesi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>3</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_2619e90ef4164dacbb9d9724dedd7f38.setContent(html_dcc21ea05a58400d93fe7614a002ade0);
+        
+
+        marker_3c6529cb7ad1400daeb24ed07869a6c4.bindPopup(popup_2619e90ef4164dacbb9d9724dedd7f38)
+        ;
+
+        
+    
+    
+            marker_3c6529cb7ad1400daeb24ed07869a6c4.bindTooltip(
+                `<div>
+                     Central Sulawesi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f722e55d3e3b47ae80ea05253ac09b82 = L.circle(
+                [-1.4300254, 121.4456179],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_89cdaa2b4074455fa887849415d3bd18 = L.marker(
+                [-7.5360639, 112.2384017],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_372bea6cad5a45168f79c77e35659525 = L.icon({"iconSize": 35, "iconUrl": "https://2.bp.blogspot.com/-S1hrqQnm0nc/XDCpZ6C7iSI/AAAAAAAABvI/MlNdKdkNBHQa0lU-1I0gyTT5FbFSR2K0QCLcBGAs/s400/logo%2Bprovinsi%2Bjawa%2Btimur.png"});
+        marker_89cdaa2b4074455fa887849415d3bd18.setIcon(custom_icon_372bea6cad5a45168f79c77e35659525);
+        
+    
+        var popup_20d3fd1b475c4beca03d3a9e70f5449c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d8da1fcceb24e568b4f16b38aaeade6 = $(`<div id="html_0d8da1fcceb24e568b4f16b38aaeade6" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>East Java</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>91</b></center></td><td><center><b style='color:green'>16</b></center></td><td><center><b>8</b></center></td></tr></table></div>`)[0];
+            popup_20d3fd1b475c4beca03d3a9e70f5449c.setContent(html_0d8da1fcceb24e568b4f16b38aaeade6);
+        
+
+        marker_89cdaa2b4074455fa887849415d3bd18.bindPopup(popup_20d3fd1b475c4beca03d3a9e70f5449c)
+        ;
+
+        
+    
+    
+            marker_89cdaa2b4074455fa887849415d3bd18.bindTooltip(
+                `<div>
+                     East Java
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_51447e4912d44a7cada14cc95955eeb5 = L.circle(
+                [-7.5360639, 112.2384017],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9100, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_2e5590a934084dc5b300163b9beffce9 = L.marker(
+                [1.6406296, 116.419389],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_d2a48138e0e14a53917e124731051ad0 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Coat_of_arms_of_East_Kalimantan.svg/1200px-Coat_of_arms_of_East_Kalimantan.svg.png"});
+        marker_2e5590a934084dc5b300163b9beffce9.setIcon(custom_icon_d2a48138e0e14a53917e124731051ad0);
+        
+    
+        var popup_a29839cdc8c24b71a184a6e1bdc22e92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33bbcc911d524353bf92c2576cdd5804 = $(`<div id="html_33bbcc911d524353bf92c2576cdd5804" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>East Kalimantan</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>17</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_a29839cdc8c24b71a184a6e1bdc22e92.setContent(html_33bbcc911d524353bf92c2576cdd5804);
+        
+
+        marker_2e5590a934084dc5b300163b9beffce9.bindPopup(popup_a29839cdc8c24b71a184a6e1bdc22e92)
+        ;
+
+        
+    
+    
+            marker_2e5590a934084dc5b300163b9beffce9.bindTooltip(
+                `<div>
+                     East Kalimantan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_69566825222f4222bf56b0e98083daa1 = L.circle(
+                [1.6406296, 116.419389],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1700, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_dd60bfb70b2546ecab590495f02cffdb = L.marker(
+                [-8.6573819, 121.0793705],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_cffb5ee5270d4c6c9b1f7df3d4471fca = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Coat_of_arms_of_East_Nusa_Tenggara.svg/1200px-Coat_of_arms_of_East_Nusa_Tenggara.svg.png"});
+        marker_dd60bfb70b2546ecab590495f02cffdb.setIcon(custom_icon_cffb5ee5270d4c6c9b1f7df3d4471fca);
+        
+    
+        var popup_85b77a20657843d08561ee87be5f90f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_288c514b673a4a669f9918b783860570 = $(`<div id="html_288c514b673a4a669f9918b783860570" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>East Nusa Tenggara</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>0</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_85b77a20657843d08561ee87be5f90f2.setContent(html_288c514b673a4a669f9918b783860570);
+        
+
+        marker_dd60bfb70b2546ecab590495f02cffdb.bindPopup(popup_85b77a20657843d08561ee87be5f90f2)
+        ;
+
+        
+    
+    
+            marker_dd60bfb70b2546ecab590495f02cffdb.bindTooltip(
+                `<div>
+                     East Nusa Tenggara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e1e4964ae10d4a92a47b27964f5a1bb7 = L.circle(
+                [-8.6573819, 121.0793705],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_d46e19c18e974a6ca56ec1229f59943b = L.marker(
+                [0.6999371999999999, 122.4467238],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_ccdcec8381bf4f5fb10c92350e99ec46 = L.icon({"iconSize": 35, "iconUrl": "https://3.bp.blogspot.com/-75ec3fJKhgU/UNl0Tdg9UXI/AAAAAAAAIrg/YztGIINVa2w/s1600/LOGO+PROVINSI+GORONTALO.png"});
+        marker_d46e19c18e974a6ca56ec1229f59943b.setIcon(custom_icon_ccdcec8381bf4f5fb10c92350e99ec46);
+        
+    
+        var popup_bbebb61156204306bf41565ec8c88a35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cee3a36a993345c0a97b66d8f08ac969 = $(`<div id="html_cee3a36a993345c0a97b66d8f08ac969" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Gorontalo</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>0</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_bbebb61156204306bf41565ec8c88a35.setContent(html_cee3a36a993345c0a97b66d8f08ac969);
+        
+
+        marker_d46e19c18e974a6ca56ec1229f59943b.bindPopup(popup_bbebb61156204306bf41565ec8c88a35)
+        ;
+
+        
+    
+    
+            marker_d46e19c18e974a6ca56ec1229f59943b.bindTooltip(
+                `<div>
+                     Gorontalo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_51dd12d81d1c4157bf658e5b78f43b9e = L.circle(
+                [0.6999371999999999, 122.4467238],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_f5691e165c6b4d8ab3dd3c4b7f11a600 = L.marker(
+                [-6.211544, 106.845172],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_836ff8ebaf1241d994791901159998d2 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Jakarta.svg/1200px-Coat_of_arms_of_Jakarta.svg.png"});
+        marker_f5691e165c6b4d8ab3dd3c4b7f11a600.setIcon(custom_icon_836ff8ebaf1241d994791901159998d2);
+        
+    
+        var popup_e32631c52a9b4f6495c24ff5ad8689dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6604fa64e1e64891b0076d3e511d9ddb = $(`<div id="html_6604fa64e1e64891b0076d3e511d9ddb" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Jakarta</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>698</b></center></td><td><center><b style='color:green'>48</b></center></td><td><center><b>74</b></center></td></tr></table></div>`)[0];
+            popup_e32631c52a9b4f6495c24ff5ad8689dd.setContent(html_6604fa64e1e64891b0076d3e511d9ddb);
+        
+
+        marker_f5691e165c6b4d8ab3dd3c4b7f11a600.bindPopup(popup_e32631c52a9b4f6495c24ff5ad8689dd)
+        ;
+
+        
+    
+    
+            marker_f5691e165c6b4d8ab3dd3c4b7f11a600.bindTooltip(
+                `<div>
+                     Jakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_75321d9036d943089bde0a99f5674e4d = L.circle(
+                [-6.211544, 106.845172],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 69800, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_8f5da4c854dd4e9c8c32de944ef1a59e = L.marker(
+                [-1.4851831, 102.4380581],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_17e80731ded34d06a274429dfc9aca7b = L.icon({"iconSize": 35, "iconUrl": "https://2.bp.blogspot.com/-y0bGVkW2XfY/Tdui2omcCgI/AAAAAAAADro/Ufjlj4w8nhs/s1600/logo+Jambi.png"});
+        marker_8f5da4c854dd4e9c8c32de944ef1a59e.setIcon(custom_icon_17e80731ded34d06a274429dfc9aca7b);
+        
+    
+        var popup_a8ef4b4b421f4c4fae2123ac0fccfad3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76e2121252734c46810523f02a807bf1 = $(`<div id="html_76e2121252734c46810523f02a807bf1" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Jambi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_a8ef4b4b421f4c4fae2123ac0fccfad3.setContent(html_76e2121252734c46810523f02a807bf1);
+        
+
+        marker_8f5da4c854dd4e9c8c32de944ef1a59e.bindPopup(popup_a8ef4b4b421f4c4fae2123ac0fccfad3)
+        ;
+
+        
+    
+    
+            marker_8f5da4c854dd4e9c8c32de944ef1a59e.bindTooltip(
+                `<div>
+                     Jambi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_08309c0e8cad4b28925bb1525b453d70 = L.circle(
+                [-1.4851831, 102.4380581],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_686ea9548423432fa7b921ac27701ebc = L.marker(
+                [-4.5585849, 105.4068079],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_e76c6bfe57d14338b2b157a5fe1afc43 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Lampung_coa.png"});
+        marker_686ea9548423432fa7b921ac27701ebc.setIcon(custom_icon_e76c6bfe57d14338b2b157a5fe1afc43);
+        
+    
+        var popup_8afce95ea2b64b809725ae384f9abffd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3da2ad5bce824461adf144ed030e3b59 = $(`<div id="html_3da2ad5bce824461adf144ed030e3b59" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Lampung</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>4</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_8afce95ea2b64b809725ae384f9abffd.setContent(html_3da2ad5bce824461adf144ed030e3b59);
+        
+
+        marker_686ea9548423432fa7b921ac27701ebc.bindPopup(popup_8afce95ea2b64b809725ae384f9abffd)
+        ;
+
+        
+    
+    
+            marker_686ea9548423432fa7b921ac27701ebc.bindTooltip(
+                `<div>
+                     Lampung
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ff2d40b7a043451c958ba2501db39739 = L.circle(
+                [-4.5585849, 105.4068079],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 400, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_77193b7a85464ef48327d9cdba7d8d96 = L.marker(
+                [-3.2384616, 130.1452734],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_2d20c6a64bd74a469ef784fce2b6bdab = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Lambang_Provinsi_Maluku.png"});
+        marker_77193b7a85464ef48327d9cdba7d8d96.setIcon(custom_icon_2d20c6a64bd74a469ef784fce2b6bdab);
+        
+    
+        var popup_ca6277b28eaa4681b9916a1021e89ec2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_310aa36d7aaa459cb5a3f4be6971d588 = $(`<div id="html_310aa36d7aaa459cb5a3f4be6971d588" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Maluku</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_ca6277b28eaa4681b9916a1021e89ec2.setContent(html_310aa36d7aaa459cb5a3f4be6971d588);
+        
+
+        marker_77193b7a85464ef48327d9cdba7d8d96.bindPopup(popup_ca6277b28eaa4681b9916a1021e89ec2)
+        ;
+
+        
+    
+    
+            marker_77193b7a85464ef48327d9cdba7d8d96.bindTooltip(
+                `<div>
+                     Maluku
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c90139415d434ca3a608f8d8789f8689 = L.circle(
+                [-3.2384616, 130.1452734],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_6296fdf168d347658d684405239c65cb = L.marker(
+                [1.5709993, 127.8087693],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_5d5382fefa2e4c5ca14f94fc73d568dc = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Coat_of_arms_of_North_Maluku.png/1200px-Coat_of_arms_of_North_Maluku.png"});
+        marker_6296fdf168d347658d684405239c65cb.setIcon(custom_icon_5d5382fefa2e4c5ca14f94fc73d568dc);
+        
+    
+        var popup_a0aff9b697994bd8a4e42f87a141f16a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4daf3a925ba424d9f1fcceac5a07fe1 = $(`<div id="html_d4daf3a925ba424d9f1fcceac5a07fe1" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>North Maluku</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_a0aff9b697994bd8a4e42f87a141f16a.setContent(html_d4daf3a925ba424d9f1fcceac5a07fe1);
+        
+
+        marker_6296fdf168d347658d684405239c65cb.bindPopup(popup_a0aff9b697994bd8a4e42f87a141f16a)
+        ;
+
+        
+    
+    
+            marker_6296fdf168d347658d684405239c65cb.bindTooltip(
+                `<div>
+                     North Maluku
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_273286c1286e41d5bd4615fff333d38e = L.circle(
+                [1.5709993, 127.8087693],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_4c81c6fb7a70474d9d9707abb3a6e8de = L.marker(
+                [1.5802128, 114.0308546],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_359a45bc5a0b4f9fb029fb8a6ac4956f = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Emblem_of_North_Kalimantan.png"});
+        marker_4c81c6fb7a70474d9d9707abb3a6e8de.setIcon(custom_icon_359a45bc5a0b4f9fb029fb8a6ac4956f);
+        
+    
+        var popup_cc47a3eb6d374622a0b45a24a2169eb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d1f67603ca8437cbed037938441ed10 = $(`<div id="html_1d1f67603ca8437cbed037938441ed10" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>North Kalimantan</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_cc47a3eb6d374622a0b45a24a2169eb8.setContent(html_1d1f67603ca8437cbed037938441ed10);
+        
+
+        marker_4c81c6fb7a70474d9d9707abb3a6e8de.bindPopup(popup_cc47a3eb6d374622a0b45a24a2169eb8)
+        ;
+
+        
+    
+    
+            marker_4c81c6fb7a70474d9d9707abb3a6e8de.bindTooltip(
+                `<div>
+                     North Kalimantan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5ee15f9af4ba4ed99cd463cae531fbf8 = L.circle(
+                [1.5802128, 114.0308546],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_c28d5e18283d49a1a845d293e553edea = L.marker(
+                [0.6246932, 123.9750018],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_252b6ca2e1a94aa0a557d99f4e3ed448 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Coat_of_arms_of_North_Sulawesi.svg/1200px-Coat_of_arms_of_North_Sulawesi.svg.png"});
+        marker_c28d5e18283d49a1a845d293e553edea.setIcon(custom_icon_252b6ca2e1a94aa0a557d99f4e3ed448);
+        
+    
+        var popup_2a9db411801042fb904f816ec70146f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8016854c9c29481ab46e9e96509ed6c6 = $(`<div id="html_8016854c9c29481ab46e9e96509ed6c6" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>North Sulawesi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>1</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_2a9db411801042fb904f816ec70146f0.setContent(html_8016854c9c29481ab46e9e96509ed6c6);
+        
+
+        marker_c28d5e18283d49a1a845d293e553edea.bindPopup(popup_2a9db411801042fb904f816ec70146f0)
+        ;
+
+        
+    
+    
+            marker_c28d5e18283d49a1a845d293e553edea.bindTooltip(
+                `<div>
+                     North Sulawesi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_14646bb94e464cae9b40ec480af5a618 = L.circle(
+                [0.6246932, 123.9750018],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_b2d2f9f0ad0e44e4bda628d4a37fbfd3 = L.marker(
+                [2.1153547, 99.5450974],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_b71a24c086d742849ae158250ea3837b = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Coat_of_arms_of_North_Sumatra.svg/1200px-Coat_of_arms_of_North_Sumatra.svg.png"});
+        marker_b2d2f9f0ad0e44e4bda628d4a37fbfd3.setIcon(custom_icon_b71a24c086d742849ae158250ea3837b);
+        
+    
+        var popup_1902f5cbbab84596a4b17f0a9714966f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34aa2e320af2474e8ad186817dcc9cb5 = $(`<div id="html_34aa2e320af2474e8ad186817dcc9cb5" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>North Sumatera</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>13</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>1</b></center></td></tr></table></div>`)[0];
+            popup_1902f5cbbab84596a4b17f0a9714966f.setContent(html_34aa2e320af2474e8ad186817dcc9cb5);
+        
+
+        marker_b2d2f9f0ad0e44e4bda628d4a37fbfd3.bindPopup(popup_1902f5cbbab84596a4b17f0a9714966f)
+        ;
+
+        
+    
+    
+            marker_b2d2f9f0ad0e44e4bda628d4a37fbfd3.bindTooltip(
+                `<div>
+                     North Sumatera
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c0e3033122af452a9e9bbe48a1e282ab = L.circle(
+                [2.1153547, 99.5450974],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1300, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_e457abd4960040258d1a76e4b3155b5d = L.marker(
+                [-4.269928, 138.0803529],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_a3f3fd6f9aed47e0aad3695c08faeec5 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Coat_of_Arms_of_Papua.png"});
+        marker_e457abd4960040258d1a76e4b3155b5d.setIcon(custom_icon_a3f3fd6f9aed47e0aad3695c08faeec5);
+        
+    
+        var popup_8130c96c9932441eb5920afa0fe20ef9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ef9c3e367754d9188055b9aca10b737 = $(`<div id="html_5ef9c3e367754d9188055b9aca10b737" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Papua</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>9</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_8130c96c9932441eb5920afa0fe20ef9.setContent(html_5ef9c3e367754d9188055b9aca10b737);
+        
+
+        marker_e457abd4960040258d1a76e4b3155b5d.bindPopup(popup_8130c96c9932441eb5920afa0fe20ef9)
+        ;
+
+        
+    
+    
+            marker_e457abd4960040258d1a76e4b3155b5d.bindTooltip(
+                `<div>
+                     Papua
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a87b60398a7e4e5a80ad8dbd934c61f6 = L.circle(
+                [-4.269928, 138.0803529],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 900, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_1170b408fa8f4082a2eb708b4964bbe0 = L.marker(
+                [0.29334689999999997, 101.7068294],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_bd28f26570614b619b7ae8d9389ed8f9 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Coat_of_arms_of_Riau.svg/1200px-Coat_of_arms_of_Riau.svg.png"});
+        marker_1170b408fa8f4082a2eb708b4964bbe0.setIcon(custom_icon_bd28f26570614b619b7ae8d9389ed8f9);
+        
+    
+        var popup_d8c79a283f064ded8165ed6ee36a4d45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_313e6c1d096642adb51bd55fe31faf44 = $(`<div id="html_313e6c1d096642adb51bd55fe31faf44" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Riau</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>3</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_d8c79a283f064ded8165ed6ee36a4d45.setContent(html_313e6c1d096642adb51bd55fe31faf44);
+        
+
+        marker_1170b408fa8f4082a2eb708b4964bbe0.bindPopup(popup_d8c79a283f064ded8165ed6ee36a4d45)
+        ;
+
+        
+    
+    
+            marker_1170b408fa8f4082a2eb708b4964bbe0.bindTooltip(
+                `<div>
+                     Riau
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0b651aa2b888415189716e35331f7111 = L.circle(
+                [0.29334689999999997, 101.7068294],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_ca6f7725ec8c49908d243651b57eb3cc = L.marker(
+                [3.9456514, 108.1428669],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_a24ae59d520d4ee39b1588217a7ab360 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Coat_of_arms_of_Riau_Islands.png"});
+        marker_ca6f7725ec8c49908d243651b57eb3cc.setIcon(custom_icon_a24ae59d520d4ee39b1588217a7ab360);
+        
+    
+        var popup_28a616ba29a54277a88e5cebbcffbc9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f839bd37c1ff45fba408455d2f9e5179 = $(`<div id="html_f839bd37c1ff45fba408455d2f9e5179" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Riau Islands</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>6</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>1</b></center></td></tr></table></div>`)[0];
+            popup_28a616ba29a54277a88e5cebbcffbc9b.setContent(html_f839bd37c1ff45fba408455d2f9e5179);
+        
+
+        marker_ca6f7725ec8c49908d243651b57eb3cc.bindPopup(popup_28a616ba29a54277a88e5cebbcffbc9b)
+        ;
+
+        
+    
+    
+            marker_ca6f7725ec8c49908d243651b57eb3cc.bindTooltip(
+                `<div>
+                     Riau Islands
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_90ef2959d23440b59701169430a2baf1 = L.circle(
+                [3.9456514, 108.1428669],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 600, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_759188a2f3284dfe94de05c9b01d759e = L.marker(
+                [-3.0926415, 115.2837585],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_d5042a5cb25c42d48cad060d9bf13b00 = L.icon({"iconSize": 35, "iconUrl": "https://pngimage.net/wp-content/uploads/2018/06/logo-provinsi-kalimantan-selatan-png.png"});
+        marker_759188a2f3284dfe94de05c9b01d759e.setIcon(custom_icon_d5042a5cb25c42d48cad060d9bf13b00);
+        
+    
+        var popup_fd4e0037c71b4453b108d383fb4da0a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c091b516d084a17b4d10b5b0d58754b = $(`<div id="html_9c091b516d084a17b4d10b5b0d58754b" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>South Kalimantan</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>5</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_fd4e0037c71b4453b108d383fb4da0a6.setContent(html_9c091b516d084a17b4d10b5b0d58754b);
+        
+
+        marker_759188a2f3284dfe94de05c9b01d759e.bindPopup(popup_fd4e0037c71b4453b108d383fb4da0a6)
+        ;
+
+        
+    
+    
+            marker_759188a2f3284dfe94de05c9b01d759e.bindTooltip(
+                `<div>
+                     South Kalimantan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d486097afcf24dac9706d7372c3690ce = L.circle(
+                [-3.0926415, 115.2837585],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_be7be05144c44bc3890fe2d37fab99b4 = L.marker(
+                [-3.6687994, 119.9740534],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_db6d241c3e2e4aaabc97dc0eeeb718d7 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Coat_of_arms_of_South_Sulawesi.svg/1200px-Coat_of_arms_of_South_Sulawesi.svg.png"});
+        marker_be7be05144c44bc3890fe2d37fab99b4.setIcon(custom_icon_db6d241c3e2e4aaabc97dc0eeeb718d7);
+        
+    
+        var popup_a6b2b18234fb43e8a33d91134bf5159a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4d6e58b8c9d467490e680866392cf2f = $(`<div id="html_e4d6e58b8c9d467490e680866392cf2f" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>South Sulawesi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>50</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>1</b></center></td></tr></table></div>`)[0];
+            popup_a6b2b18234fb43e8a33d91134bf5159a.setContent(html_e4d6e58b8c9d467490e680866392cf2f);
+        
+
+        marker_be7be05144c44bc3890fe2d37fab99b4.bindPopup(popup_a6b2b18234fb43e8a33d91134bf5159a)
+        ;
+
+        
+    
+    
+            marker_be7be05144c44bc3890fe2d37fab99b4.bindTooltip(
+                `<div>
+                     South Sulawesi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b3559a8d0b544c9ca6a9727676f9de84 = L.circle(
+                [-3.6687994, 119.9740534],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_7bb9e60b85d34cd7877d4824ef62eebc = L.marker(
+                [-4.14491, 122.174605],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_58bcceeb85904bdcb06bf2688c12a71c = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Coat_of_arms_of_Southeast_Sulawesi.svg/1200px-Coat_of_arms_of_Southeast_Sulawesi.svg.png"});
+        marker_7bb9e60b85d34cd7877d4824ef62eebc.setIcon(custom_icon_58bcceeb85904bdcb06bf2688c12a71c);
+        
+    
+        var popup_7ff190f5931e463ba8daa2b2c2a09ea4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6ed22047aba451988465a4729250eef = $(`<div id="html_b6ed22047aba451988465a4729250eef" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Southeast Sulawesi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>3</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_7ff190f5931e463ba8daa2b2c2a09ea4.setContent(html_b6ed22047aba451988465a4729250eef);
+        
+
+        marker_7bb9e60b85d34cd7877d4824ef62eebc.bindPopup(popup_7ff190f5931e463ba8daa2b2c2a09ea4)
+        ;
+
+        
+    
+    
+            marker_7bb9e60b85d34cd7877d4824ef62eebc.bindTooltip(
+                `<div>
+                     Southeast Sulawesi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4c9a5dbdd2fb4de8a024075feda3e322 = L.circle(
+                [-4.14491, 122.174605],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_6f550095aba74510b0b41c05580d5e59 = L.marker(
+                [-3.3194374, 103.914399],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_fdaedc61e4e84141ad61d165360d9fce = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Coat_of_arms_of_South_Sumatra.svg/1200px-Coat_of_arms_of_South_Sumatra.svg.png"});
+        marker_6f550095aba74510b0b41c05580d5e59.setIcon(custom_icon_fdaedc61e4e84141ad61d165360d9fce);
+        
+    
+        var popup_c4e5b2740ddf4c9786e86af249a436ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4c4a105fbdc4bd4b440a136dfee89ad = $(`<div id="html_a4c4a105fbdc4bd4b440a136dfee89ad" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>South Sumatera</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>2</b></center></td></tr></table></div>`)[0];
+            popup_c4e5b2740ddf4c9786e86af249a436ef.setContent(html_a4c4a105fbdc4bd4b440a136dfee89ad);
+        
+
+        marker_6f550095aba74510b0b41c05580d5e59.bindPopup(popup_c4e5b2740ddf4c9786e86af249a436ef)
+        ;
+
+        
+    
+    
+            marker_6f550095aba74510b0b41c05580d5e59.bindTooltip(
+                `<div>
+                     South Sumatera
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_29afabc3d74748cc927fa0b3d5de1cb1 = L.circle(
+                [-3.3194374, 103.914399],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_91ff6b5b22c34e1f8968de8978f96419 = L.marker(
+                [-7.090911, 107.668887],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_fa47b0ce0f2b46c79e07a1d51fe08a5e = L.icon({"iconSize": 35, "iconUrl": "https://3.bp.blogspot.com/-BRV8kAVyi4I/XDX3S86Pk5I/AAAAAAAABwA/K5fnfc4c1VYps0EcV32qP6yB96kghqU3QCLcBGAs/s1600/logo%2Bjawa%2Bbarat.png"});
+        marker_91ff6b5b22c34e1f8968de8978f96419.setIcon(custom_icon_fa47b0ce0f2b46c79e07a1d51fe08a5e);
+        
+    
+        var popup_2a578a0eeefd4982a1e2343c4fafde47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d6c44d74a704217a58b7a6579bb285d = $(`<div id="html_4d6c44d74a704217a58b7a6579bb285d" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>West Java</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>180</b></center></td><td><center><b style='color:green'>8</b></center></td><td><center><b>20</b></center></td></tr></table></div>`)[0];
+            popup_2a578a0eeefd4982a1e2343c4fafde47.setContent(html_4d6c44d74a704217a58b7a6579bb285d);
+        
+
+        marker_91ff6b5b22c34e1f8968de8978f96419.bindPopup(popup_2a578a0eeefd4982a1e2343c4fafde47)
+        ;
+
+        
+    
+    
+            marker_91ff6b5b22c34e1f8968de8978f96419.bindTooltip(
+                `<div>
+                     West Java
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_307a8b25646943dd84ca8a782cee38ba = L.circle(
+                [-7.090911, 107.668887],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18000, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_04e4970b03b84b94b1ccd80dd21c8848 = L.marker(
+                [-0.2787808, 111.4752851],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_542c24ebd8eb4fa195c77f84885b743b = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Coat_of_arms_of_West_Kalimantan.svg/1200px-Coat_of_arms_of_West_Kalimantan.svg.png"});
+        marker_04e4970b03b84b94b1ccd80dd21c8848.setIcon(custom_icon_542c24ebd8eb4fa195c77f84885b743b);
+        
+    
+        var popup_f79ed2857590464e8060e993d7ef0216 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de9302954cbf4a7a95a05116e233ab79 = $(`<div id="html_de9302954cbf4a7a95a05116e233ab79" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>West Kalimantan</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>7</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_f79ed2857590464e8060e993d7ef0216.setContent(html_de9302954cbf4a7a95a05116e233ab79);
+        
+
+        marker_04e4970b03b84b94b1ccd80dd21c8848.bindPopup(popup_f79ed2857590464e8060e993d7ef0216)
+        ;
+
+        
+    
+    
+            marker_04e4970b03b84b94b1ccd80dd21c8848.bindTooltip(
+                `<div>
+                     West Kalimantan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3975e309e88948ec9998efcd125b92d4 = L.circle(
+                [-0.2787808, 111.4752851],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 700, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_8725727d3fe8437997ab1b289fed9ab2 = L.marker(
+                [-8.6529334, 117.3616476],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_3f3928fb76a140ada613266eb8e9b6ab = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Coat_of_arms_of_West_Nusa_Tenggara.svg/1200px-Coat_of_arms_of_West_Nusa_Tenggara.svg.png"});
+        marker_8725727d3fe8437997ab1b289fed9ab2.setIcon(custom_icon_3f3928fb76a140ada613266eb8e9b6ab);
+        
+    
+        var popup_89204726f2344eebac98377c683b985c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_433eb0368aca41359ac7b4054680af9f = $(`<div id="html_433eb0368aca41359ac7b4054680af9f" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>West Nusa Tenggara</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_89204726f2344eebac98377c683b985c.setContent(html_433eb0368aca41359ac7b4054680af9f);
+        
+
+        marker_8725727d3fe8437997ab1b289fed9ab2.bindPopup(popup_89204726f2344eebac98377c683b985c)
+        ;
+
+        
+    
+    
+            marker_8725727d3fe8437997ab1b289fed9ab2.bindTooltip(
+                `<div>
+                     West Nusa Tenggara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2511659b7e844b858e58275935ff0646 = L.circle(
+                [-8.6529334, 117.3616476],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_5f697c1cdbdf47f4b21ebc31ca9b4297 = L.marker(
+                [-1.3361154, 133.1747162],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_40bf7b66a9fb49dda9284a78b780ad39 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Coat_of_arms_of_West_Papua.svg/1200px-Coat_of_arms_of_West_Papua.svg.png"});
+        marker_5f697c1cdbdf47f4b21ebc31ca9b4297.setIcon(custom_icon_40bf7b66a9fb49dda9284a78b780ad39);
+        
+    
+        var popup_e4572639b0564505a371fdbdf10328c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a869cad40864b65888b7be6dea4ed2f = $(`<div id="html_6a869cad40864b65888b7be6dea4ed2f" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>West Papua</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_e4572639b0564505a371fdbdf10328c0.setContent(html_6a869cad40864b65888b7be6dea4ed2f);
+        
+
+        marker_5f697c1cdbdf47f4b21ebc31ca9b4297.bindPopup(popup_e4572639b0564505a371fdbdf10328c0)
+        ;
+
+        
+    
+    
+            marker_5f697c1cdbdf47f4b21ebc31ca9b4297.bindTooltip(
+                `<div>
+                     West Papua
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_03e18d0482fe427c9e651952941db55d = L.circle(
+                [-1.3361154, 133.1747162],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_40b3fc99990c4ab5bea3b0b3ef526869 = L.marker(
+                [-2.8441371, 119.2320784],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_8246e4bae550497db448395a7cb484ea = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Coat_of_arms_of_West_Sulawesi.png"});
+        marker_40b3fc99990c4ab5bea3b0b3ef526869.setIcon(custom_icon_8246e4bae550497db448395a7cb484ea);
+        
+    
+        var popup_64b6e29a8c4c48f48362680ca2549c42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98b5c2ad8584428e84e493286df5a1e6 = $(`<div id="html_98b5c2ad8584428e84e493286df5a1e6" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>West Sulawesi</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_64b6e29a8c4c48f48362680ca2549c42.setContent(html_98b5c2ad8584428e84e493286df5a1e6);
+        
+
+        marker_40b3fc99990c4ab5bea3b0b3ef526869.bindPopup(popup_64b6e29a8c4c48f48362680ca2549c42)
+        ;
+
+        
+    
+    
+            marker_40b3fc99990c4ab5bea3b0b3ef526869.bindTooltip(
+                `<div>
+                     West Sulawesi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_782afef32a7f4674903ebc23e3e8e92b = L.circle(
+                [-2.8441371, 119.2320784],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_d2f084dcea0f4ee9ad7f7fb95934a15c = L.marker(
+                [-0.7399397, 100.80000509999999],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_41b456e04af641e999a7c7c0ba972f2c = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Coat_of_arms_of_West_Sumatra.svg/1200px-Coat_of_arms_of_West_Sumatra.svg.png"});
+        marker_d2f084dcea0f4ee9ad7f7fb95934a15c.setIcon(custom_icon_41b456e04af641e999a7c7c0ba972f2c);
+        
+    
+        var popup_fae578d534254bfda54b7ccc6ab5c25e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9d5ff9852d14c0aa0a4f909984dffeb = $(`<div id="html_e9d5ff9852d14c0aa0a4f909984dffeb" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>West Sumatra</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>8</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></table></div>`)[0];
+            popup_fae578d534254bfda54b7ccc6ab5c25e.setContent(html_e9d5ff9852d14c0aa0a4f909984dffeb);
+        
+
+        marker_d2f084dcea0f4ee9ad7f7fb95934a15c.bindPopup(popup_fae578d534254bfda54b7ccc6ab5c25e)
+        ;
+
+        
+    
+    
+            marker_d2f084dcea0f4ee9ad7f7fb95934a15c.bindTooltip(
+                `<div>
+                     West Sumatra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d441322b76454404a917b3c83cf9594c = L.circle(
+                [-0.7399397, 100.80000509999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 800, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+            var marker_8bef547fe94e422f9ffb816169442039 = L.marker(
+                [-7.8753849, 110.4262088],
+                {}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+    
+        var custom_icon_7a0ce7490f5c4adabfb73bb836451352 = L.icon({"iconSize": 35, "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Coat_of_arms_of_Yogyakarta.svg/1200px-Coat_of_arms_of_Yogyakarta.svg.png"});
+        marker_8bef547fe94e422f9ffb816169442039.setIcon(custom_icon_7a0ce7490f5c4adabfb73bb836451352);
+        
+    
+        var popup_90d647ca2486499d91435f7ab14330a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52f8571e567f47168efb85759e43e7e8 = $(`<div id="html_52f8571e567f47168efb85759e43e7e8" style="width: 100.0%; height: 100.0%;"><small>2020-03-31 14:54 WIB</small><h4><b>Yogyakarta</b></h4><table><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>18</b></center></td><td><center><b style='color:green'>1</b></center></td><td><center><b>2</b></center></td></tr></table></div>`)[0];
+            popup_90d647ca2486499d91435f7ab14330a4.setContent(html_52f8571e567f47168efb85759e43e7e8);
+        
+
+        marker_8bef547fe94e422f9ffb816169442039.bindPopup(popup_90d647ca2486499d91435f7ab14330a4)
+        ;
+
+        
+    
+    
+            marker_8bef547fe94e422f9ffb816169442039.bindTooltip(
+                `<div>
+                     Yogyakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_33d77b83280a4af8b91b71387970e5e8 = L.circle(
+                [-7.8753849, 110.4262088],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1800, "stroke": true, "weight": 3}
+            ).addTo(map_861df3e9859040a79aedcf738c3dca5a);
+        
+</script>
